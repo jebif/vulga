@@ -3,7 +3,7 @@ require("./headerLoup.php");
 $score=0;
 $space = "....";
 $pipe="&nbsp;&nbsp;";
-$ccl = "<h1>Vous pouvez mieux faire, essayez encore !<br>4 bases peuvent être alignées parfaitement.</h1>";
+$ccl = "<h1>Vous pouvez mieux faire, essayez encore !<br>4 bases peuvent Ãªtre alignÃ©es parfaitement.</h1>";
 if ($_GET['s'] == "0"){$score=2;$space = "";$pipe="&nbsp;|&nbsp;&nbsp;|";}
 else{if ($_GET['s'] == "1"){$score = 2;$space = ".";$pipe="&nbsp;&nbsp;&nbsp;&nbsp;||";}
 else{if ($_GET['s'] == "2"){$score = 4;$ccl = "<h1>Vous avez obtenu le meilleur score !</h1>";$space = "..";$pipe="&nbsp;&nbsp;||||";}
@@ -12,12 +12,12 @@ else{if ($_GET['s'] == "3"){$score = 1;$space = "...";$pipe="&nbsp;&nbsp;&nbsp;&
 }
 }
 ?>
-<h1>Voici 2 séquences à aligner :</h1>
-<h3>Cliquez sur l'une des bases de la séquence 1 pour l'aligner avec la première base de la séquence 2.</h3>
+<h1>Voici 2 sÃ©quences Ã  aligner :</h1>
+<h3>Cliquez sur l'une des bases de la sÃ©quence 1 pour l'aligner avec la premiÃ¨re base de la sÃ©quence 2.</h3>
 
 <table>
   <tbody>
-  <tr><td>Séquence 1 :</td><td>Séquence 2 :</td>
+  <tr><td>SÃ©quence 1 :</td><td>SÃ©quence 2 :</td>
   </tr>
   <tr>
 	<td>
@@ -33,8 +33,8 @@ else{if ($_GET['s'] == "3"){$score = 1;$space = "...";$pipe="&nbsp;&nbsp;&nbsp;&
 
 <table>
   <tbody>
-  <tr> 
-	<td colspan="1" rowspan="3">	
+  <tr>
+	<td colspan="1" rowspan="3">
 		<span class="c">C</span><span  class="g">G</span><span class="t">T</span><span  class="g">G</span><span class="a">A</span><span class="a">A</span><span class="z"><?php echo $space?></span>
 		<br><span class="z"><?php echo $pipe?></span><br>
 		<span class="z"><?php echo $space?></span><span class="t">T</span><span  class="g">G</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="t">T</span>
@@ -46,9 +46,9 @@ else{if ($_GET['s'] == "3"){$score = 1;$space = "...";$pipe="&nbsp;&nbsp;&nbsp;&
 </table>
 <br><br><br>
 <?php if ($_GET['s'] == "2"){?>
-<h2>Bravo !! Mais c'était facile.</h2>
-<h1><a href= "./Align2.php?c=0&amp;q=2&amp;s=0">Un exemple plus compliqué ?</a></h1>
+<h2>Bravo !! Mais c'Ã©tait facile.</h2>
+<h1><a href= "./Align2.php?c=0&amp;q=2&amp;s=0">Un exemple plus compliquÃ© ?</a></h1>
 <?php } ?>
-<?php 
+<?php
 require("./footerLoup.php");
 ?>

@@ -1,17 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	   "http://www.w3.org/TR/html4/loose.dtd">	
-
-
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 	<head>
-		<title>
-		Loup y es-tu?
-		</title>
+		<title>Loup y es-tu? | JeBiF </title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="./EcoleADN/stylesADN.css" type="text/css">
 		<link rel="icon" href="./EcoleADN/Menu.jpg">
 
-		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+		<meta charset="utf-8">
 		<meta name="title" content="Ecole de l'ADN - JeBiF">
 		<meta name="language" content="fr">
 		<meta name="robots" content="All">
@@ -21,21 +20,19 @@
 
 	</head>
 <body>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	<div  id="header">Génétique et Bioinformatique</div>
-	<?php if ($_SERVER['PHP_SELF'] != '/app/ADN/index.php'){ ?>
-	<!-- navigation
-~~~~~~~~~~~ -->
-	<div id="navigation">
-<!-- pages web
-~~~~~~~~~~~ -->
-<?php echo "$current1";?><a href= "./index.php" style="font-size: 15px">Recommencer.</a>
-	</div>
-	<?php } ?>	
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ texte ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+	<nav class="navbar navbar-expand-lg navbar-default navbar-dark">
+
+		<a class="navbar-brand" href="#">
+			<img src="JebifLogo.png" width="50" class="d-inline-block align-top">
+		</a>
+		<span class="navbar-brand">RSG France - JeBiF</span>
+	</nav>
+	<section id="content" class="container-fluid">
+		<h1 class="titreApp"><a href="index.php">GÃ©nÃ©tique et Bioinformatique</a></h1>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ texte ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<div id="texte">
-	

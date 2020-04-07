@@ -1,20 +1,19 @@
 <?php
 require("./headerLoup.php");
 ?>
-<h1>Le bioinformaticien développe et/ou utilise des outils
-informatiques complexes utiles aux problématiques biologiques.</h1>
+<h1>Le bioinformaticien dÃ©veloppe et/ou utilise des outils
+informatiques complexes utiles aux problÃ©matiques biologiques.</h1>
 
 <h3>Pour trouver LE meilleur alignement, il suffit d'un clic sur le bouton "soumettre".</h3>
 <img src="./EcoleADN/interface1.png" alt = "">
-<br><br>Séquence 1<br>
+<br><br>SÃ©quence 1<br>
 <span class="c">C</span><span class="t">T</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="t">T</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span> <span class="c">C</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span>
-<br><br>Séquence 2<br>
+<br><br>SÃ©quence 2<br>
 <span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="t">T</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="t">T</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="t">T</span><span class="c">C</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="t">T</span><span class="a">A</span>
 <br><br>
 <center><a href= "./Interface.php"><img src="./EcoleADN/submit.jpg" alt = "submit"></a></center>
 <br>
 <img src="./EcoleADN/interface3.png" alt = "">
-<?php 
+<?php
 require("./footerLoup.php");
 ?>
-

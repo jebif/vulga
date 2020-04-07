@@ -5,14 +5,14 @@ require("./headerLoup.php");
 <table>
   <tbody>
   <tr>
-<td><h1><a href= "./Align.php">Un exemple pour comprendre ?</a></h1><td>  
+<td><h1><a href= "./Align.php">Un exemple pour comprendre ?</a></h1><td>
 <td class = "images"><img src="./EcoleADN/Chercheur.jpg" alt = "">
 </td>
-	  
+
 	</tr>
 	</tbody>
 </table>
 
-<?php 
+<?php
 require("./footerLoup.php");
 ?>

@@ -1,12 +1,12 @@
 <?php
 require("./headerLoup.php");
 ?>
-<h1>Voici 2 séquences à aligner :</h1>
+<h1>Voici 2 sÃ©quences Ã  aligner :</h1>
 <table>
   <tbody>
-  <tr><td>Séquence 1</td><td>Séquence 2</td>
+  <tr><td>SÃ©quence 1</td><td>SÃ©quence 2</td>
   </tr>
-  <tr> 
+  <tr>
 	<td><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span>
 	</td>
 	<td><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="t">T</span>
@@ -16,17 +16,16 @@ require("./headerLoup.php");
 </table>
 
 
-<h1>Pour aligner au mieux des séquences, votre objectif est de faire coïncider le plus possible de bases de l'ADN (une base est représentée 
-par une lettre). Un <b>score</b> vous sera attribué.</h1>
+<h1>Pour aligner au mieux des sÃ©quences, votre objectif est de faire coÃ¯ncider le plus possible de bases de l'ADN (une base est reprÃ©sentÃ©e par une lettre). Un <b>score</b> vous sera attribuÃ©.</h1>
 
 <br>
 
 
-<h3>A vous de jouer ! Cliquez sur l'une des bases de la séquence 1 pour l'aligner avec la première base de la séquence 2.</h3>
+<h3>A vous de jouer ! Cliquez sur l'une des bases de la sÃ©quence 1 pour l'aligner avec la premiÃ¨re base de la sÃ©quence 2.</h3>
 
 <table>
   <tbody>
-  <tr><td>Séquence 1 :</td><td>Séquence 2 :</td>
+  <tr><td>SÃ©quence 1 :</td><td>SÃ©quence 2 :</td>
   </tr>
   <tr>
 	<td>
@@ -45,6 +44,6 @@ par une lettre). Un <b>score</b> vous sera attribué.</h1>
 <br>
 <span style="font-size: 16px;font-family:courier new;color:grey">.....</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="t">T</span>
 
-<h1>Aucune base n'est alignée parfaitement entre les 2 séquences... le score est de 0 !<br>Vous aurez certainement une meilleure solution...</h1><?php 
+<h1>Aucune base n'est alignÃ©e parfaitement entre les 2 sÃ©quences... le score est de 0 !<br>Vous aurez certainement une meilleure solution...</h1><?php 
 require("./footerLoup.php");
 ?>

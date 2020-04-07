@@ -2,14 +2,14 @@
 require("./headerLoup.php");
 ?>
 
-<h2>Séquences 1 et 2 soumises au logiciel d'alignement : </h2> 
-Séquence 1 :<br>
+<h2>SÃ©quences 1 et 2 soumises au logiciel d'alignement : </h2>
+SÃ©quence 1 :<br>
 <span class="c">C</span><span class="t">T</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="t">T</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span> <span class="c">C</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span>
-<br>Séquence 2 :<br>
+<br>SÃ©quence 2 :<br>
 <span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="t">T</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="c">C</span><span class="g">G</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="t">T</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="c">C</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="a">A</span><span class="t">T</span><span class="c">C</span><span class="a">A</span><span class="c">C</span><span class="g">G</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="t">T</span><span class="g">G</span><span class="a">A</span><span class="a">A</span><span class="t">T</span><span class="a">A</span>
 <br><br>
-<h2>Séquences 1 et 2 alignées : le meilleur score est de 57.</h2>
-Un score supérieur à 40 est obtenu en ajoutant des décalages dans la séquence. Ils sont notés ici via un point '<span class="z">.</span>'.
+<h2>SÃ©quences 1 et 2 alignÃ©es : le meilleur score est de 57.</h2>
+Un score supÃ©rieur Ã  40 est obtenu en ajoutant des dÃ©calages dans la sÃ©quence. Ils sont notÃ©s ici via un point '<span class="z">.</span>'.
 <br>
 <br>
 <img src="./EcoleADN/interface1.png" alt = "">
@@ -25,8 +25,8 @@ Un score supérieur à 40 est obtenu en ajoutant des décalages dans la séquence. I
 <h1>Les outils bioinformatiques permettent de trouver LE meilleur alignement... et donc LE meilleur score !</h1>
 
 
-<h1>Maintenant que vous avez tout compris... <a href= "./Enquete.php?q=0">reprenons notre enquête !</a></h1>
+<h1>Maintenant que vous avez tout compris... <a href= "./Enquete.php?q=0">reprenons notre enquÃªte !</a></h1>
 
-<?php 
+<?php
 require("./footerLoup.php");
 ?>

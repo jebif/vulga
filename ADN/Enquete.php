@@ -11,14 +11,14 @@ $renard = "6";
 
 <table>
   <tbody>
-  <tr> <td class = "images"><img src="./EcoleADN/Crotte.JPG" alt = "Crotte à analyser"></td> <td><h2>Alors, qui a fait cette crotte ?</h2></td>
+  <tr> <td class = "images"><img src="./EcoleADN/Crotte.JPG" alt = "Crotte Ã  analyser"></td> <td><h2>Alors, qui a fait cette crotte ?</h2></td>
 	</tr></tbody></table>
 
-<h3>Pour que l'alignement soit réalisé entre la séquence de votre échantillon et celle des animaux ci-dessous, cliquez sur chaque animal.</h3>
+<h3>Pour que l'alignement soit rÃ©alisÃ© entre la sÃ©quence de votre Ã©chantillon et celle des animaux ci-dessous, cliquez sur chaque animal.</h3>
 
 <table>
   <tbody>
-  <tr> 
+  <tr>
 <?php	if (strrchr($q, $chien) == "") { echo "<td class=\"Ct\">Un chien ?</td>"; }
 		if (strrchr($q, $marmotte) == "") { echo "<td class=\"Ct\">Une marmotte ?</td>"; }
 		if (strrchr($q, $renard) == "") { echo "<td class=\"Ct\">Un renard ?</td>"; }
@@ -35,21 +35,21 @@ $renard = "6";
 <table>
   <tbody>
 	<tr>
-	<?php 
+	<?php
 	if (strrchr($q, $lynx) == "") { echo "<td class=\"Ct\">Un lynx ?</td>"; }
 	if (strrchr($q, $loup) == "") { echo "<td class=\"Ct\">Un loup ?</td>";}
-	if (strrchr($q, $elephant) == "") { echo "<td class=\"Ct\">Un éléphant ?</td>";}
+	if (strrchr($q, $elephant) == "") { echo "<td class=\"Ct\">Un Ã©lÃ©phant ?</td>";}
 	?>
 	</tr><tr>
-	<?php 
+	<?php
 	if (strrchr($q, $lynx) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$lynx\"><img src=\"./EcoleADN/Lynx.png\" alt=\"lynx\"></a></td>";}
 	if (strrchr($q, $loup) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$loup\"><img src=\"./EcoleADN/Loup.jpg\" alt=\"loup\"></a></td>";}
-	if (strrchr($q, $elephant) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$elephant\"><img src=\"./EcoleADN/Elephant.jpg\" alt=\"éléphant\"></a></td>";}
+	if (strrchr($q, $elephant) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$elephant\"><img src=\"./EcoleADN/Elephant.jpg\" alt=\"Ã©lÃ©phant\"></a></td>";}
 	?>
 	</tr>
   </tbody>
 </table>
 
-<?php 
+<?php
 require("./footerLoup.php");
 ?>
