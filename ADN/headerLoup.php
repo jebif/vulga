@@ -30,9 +30,9 @@
 		</a>
 		<span class="navbar-brand">RSG France - JeBiF</span>
 	</nav>
+
 	<section id="content" class="container-fluid">
-		<h1 class="titreApp"><a href="index.php">Génétique et Bioinformatique</a></h1>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ texte ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	<div id="texte">
+		<h1 class="titreApp">Génétique et Bioinformatique</h1>
+		<?php if(basename($_SERVER['REQUEST_URI']) != 'index.php'){ ?>
+			<p><a class="btn btn-outline-primary float-right btn-lg" role="button" href= "index.php">Recommencer</a></p>
+		<?php } ?>

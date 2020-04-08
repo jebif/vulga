@@ -1,38 +1,24 @@
 <?php
 require("headerLoup.php");
 ?>
-<table>
-  <tbody>
-  <tr>
-		<td class="images"><img src="./EcoleADN/Crotte.JPG" alt = "Crotte à analyser"></td>
-	  <td><h1>Cette crotte a été prélevée sur le site du Mercantour dans les Alpes.<br></h1></td>
-	</tr>
-	</tbody>
-</table>
-<h1>Les chercheurs du laboratoire d'écologie alpine (LECA) ont décidé de mener l'enquête pour savoir qui a fait cette crotte.<br>
-Ils ont traité cet indice et obtenu la séquence ADN de l'échantillon :</h1>
-<table>
-  <tbody>
-  <tr>
-<td><span class="z">
-ACACCCCTAC ATTCATATAT TGAATCACCC
-CTACTGTGCT ATGTCAGTAT CTCCAGGTAA
-ACCCTTCTCC CCTCCCCCTA TGTACGTCGT
-GCATTAATGG TTTGCCCCAT GCATATAAGC
-ATGTACATAA TATTATATCC TTACATAGGA
+    <img src="./EcoleADN/Crotte.JPG" alt = "Crotte à analyser" class="rounded float-right pl-3">
+    <p>La crotte à droite a été prélevée sur le site du Mercantour dans les Alpes par des promeneurs qui souhaitaient savoir de quel animal elle provenait.</p>
+    <p>Ils ont donc apporté cette croite au laboratoire d'écologie alpine (LECA). Les chercheurs du laboratoire ont décidé de mener l'enquête.</p>
+    <p>Afin d'identifier l'animal, ils ont extrait l'ADN de cette crotte. L'ADN est présent dans toutes les cellules d'un organisme. Il constitue une véritable carte d'identité. Une fois l'ADN obtenu, ils l'ont donc lu, ce qu'on appelle le séquençage de l'ADN. Ils ont obtenu la séquence suivante :</p>
+    <p><span class="z">
+ACACCCCTAC ATTCATATAT TGAATCACCC<br />
+CTACTGTGCT ATGTCAGTAT CTCCAGGTAA<br />
+ACCCTTCTCC CCTCCCCCTA TGTACGTCGT<br />
+GCATTAATGG TTTGCCCCAT GCATATAAGC<br />
+ATGTACATAA TATTATATCC TTACATAGGA<br />
 CATACTAACT CAATCTCACA ATTCACTGAC
-</span>
-</td>
-<td class="images"><img src="./EcoleADN/Fourmi.png" alt = "">
-</td>
+    </span></p>
 
-	</tr>
-	</tbody>
-</table>
+    <p>En tant que bioinformaticien en herbe, les chercheurs du LECA te demande ton aide pour identifier l'animal à partir de cette séquence d'ADN. Clique sur le bouton ci-dessous pour commencer.</p>
 
-<h1>C'est là qu'intervient le bioinformaticien qui tirera le maximum d'informations de cette séquence.<br>
-<a href= "./Bioinfo.php">Un clic pour l'aider à mener l'enquête ?</a></h1>
-<br>
+    <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./Bioinfo.php">Démarrer</a></p>
+
+    <p>Pendant toute l'aventure, tu pourras revenir à cette page en cliquant sur le bouton "recommencer".</p>
 
 <?php
 require("./footerLoup.php");

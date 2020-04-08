@@ -9,46 +9,90 @@ $elephant = "5";
 $renard = "6";
 ?>
 
-<table>
-  <tbody>
-  <tr> <td class = "images"><img src="./EcoleADN/Crotte.JPG" alt = "Crotte à analyser"></td> <td><h2>Alors, qui a fait cette crotte ?</h2></td>
-	</tr></tbody></table>
+<h2>Alors, qui a fait cette crotte ?</h2>
+<img src="./EcoleADN/Crotte.JPG" alt = "Crotte à analyser" class="rounded float-right">
 
-<h3>Pour que l'alignement soit réalisé entre la séquence de votre échantillon et celle des animaux ci-dessous, cliquez sur chaque animal.</h3>
 
-<table>
-  <tbody>
-  <tr>
-<?php	if (strrchr($q, $chien) == "") { echo "<td class=\"Ct\">Un chien ?</td>"; }
-		if (strrchr($q, $marmotte) == "") { echo "<td class=\"Ct\">Une marmotte ?</td>"; }
-		if (strrchr($q, $renard) == "") { echo "<td class=\"Ct\">Un renard ?</td>"; }
+<p>Pour que l'alignement soit réalisé entre la séquence de ton échantillon et celle des animaux ci-dessous, clique sur chaque animal.</p>
+
+<section class="row">
+<div class="card-group">
+<?php
+    if (strrchr($q, $chien) == "") {
+        ?>
+        <div class="card">
+            <img src="EcoleADN/Chien.jpg" class="card-img-top" alt="chien" width="100px">
+            <div class="card-body">
+                <h5 class="card-title">Un chien ?</h5>
+                <a class="btn btn-outline-primary" role="button" href="Align6.php?q=<?php echo $q.$chien; ?>">Ajouter le chien</a>
+
+            </div>
+        </div>
+        <?php
+    }
+
+	if (strrchr($q, $marmotte) == ""){
+        ?>
+        <div class="card">
+            <img src="EcoleADN/Castor.png" class="card-img-top" alt="marmotte" width="100px">
+            <div class="card-body">
+                <h5 class="card-title">Une marmotte ?</h5>
+                <a class="btn btn-outline-primary" role="button" href="Align6.php?q=<?php echo $q.$marmotte; ?>">Ajouter la marmotte</a>
+            </div>
+        </div>
+        <?php
+    }
+
+    if (strrchr($q, $renard) == "") {
+        ?>
+        <div class="card">
+            <img src="EcoleADN/Renard.jpg" class="card-img-top" alt="Renard" width="100px">
+            <div class="card-body">
+                <h5 class="card-title">Un renard ?</h5>
+                <a class="btn btn-outline-primary" role="button" href="Align6.php?q=<?php echo $q.$renard; ?>">Ajouter le renard</a>
+            </div>
+        </div>
+        <?php
+    }
+
+    if (strrchr($q, $lynx) == "") {
+        ?>
+        <div class="card">
+            <img src="EcoleADN/Lynx.png" class="card-img-top" alt="lynx" width="100px">
+            <div class="card-body">
+                <h5 class="card-title">Un lynx ?</h5>
+                <a class="btn btn-outline-primary" role="button" href="Align6.php?q=<?php echo $q.$lynx; ?>">Ajouter le lynx</a>
+            </div>
+        </div>
+        <?php
+    }
+
+	if (strrchr($q, $loup) == ""){
+        ?>
+        <div class="card">
+            <img src="EcoleADN/Loup.jpg" class="card-img-top" alt="loup" width="100px">
+            <div class="card-body">
+                <h5 class="card-title">Un loup ?</h5>
+                <a class="btn btn-outline-primary" role="button" href="Align6.php?q=<?php echo $q.$loup; ?>">Ajouter le loup</a>
+            </div>
+        </div>
+        <?php
+    }
+
+    if (strrchr($q, $elephant) == "") {
+        ?>
+        <div class="card">
+            <img src="EcoleADN/Elephant.jpg" class="card-img-top" alt="elephant" width="100px">
+            <div class="card-body">
+                <h5 class="card-title">Un éléphant ?</h5>
+                <a class="btn btn-outline-primary" role="button" href="Align6.php?q=<?php echo $q.$renard; ?>">Ajouter l'éléphant</a>
+            </div>
+        </div>
+        <?php
+    }
 		?>
-	</tr>
-	<tr>
-<?php 	if (strrchr($q, $chien) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$chien\"><img src=\"./EcoleADN/Chien.jpg\" alt=\"chien\"></a></td>"; }
-	if (strrchr($q, $marmotte) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$marmotte\"><img src=\"./EcoleADN/Castor.png\" alt=\"marmotte\"></a></td>"; }
-	if (strrchr($q, $renard) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$renard\"><img src=\"./EcoleADN/Renard.jpg\" alt=\"renard\"></a></td>"; }
-	?> </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-	<tr>
-	<?php
-	if (strrchr($q, $lynx) == "") { echo "<td class=\"Ct\">Un lynx ?</td>"; }
-	if (strrchr($q, $loup) == "") { echo "<td class=\"Ct\">Un loup ?</td>";}
-	if (strrchr($q, $elephant) == "") { echo "<td class=\"Ct\">Un éléphant ?</td>";}
-	?>
-	</tr><tr>
-	<?php
-	if (strrchr($q, $lynx) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$lynx\"><img src=\"./EcoleADN/Lynx.png\" alt=\"lynx\"></a></td>";}
-	if (strrchr($q, $loup) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$loup\"><img src=\"./EcoleADN/Loup.jpg\" alt=\"loup\"></a></td>";}
-	if (strrchr($q, $elephant) == "") { echo "<td class = \"images\"><a href= \"./Align6.php?q=$q$elephant\"><img src=\"./EcoleADN/Elephant.jpg\" alt=\"éléphant\"></a></td>";}
-	?>
-	</tr>
-  </tbody>
-</table>
+</div>
+</section>
 
 <?php
 require("./footerLoup.php");
