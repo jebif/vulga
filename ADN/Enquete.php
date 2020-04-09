@@ -85,7 +85,7 @@ $renard = "6";
             <img src="EcoleADN/Elephant.jpg" class="card-img-top" alt="elephant" width="100px">
             <div class="card-body">
                 <h5 class="card-title">Un éléphant ?</h5>
-                <a class="btn btn-outline-primary" role="button" href="Align6.php?q=<?php echo $q.$renard; ?>">Ajouter l'éléphant</a>
+                <a class="btn btn-outline-primary" role="button" href="Align6.php?q=<?php echo $q.$elephant; ?>">Ajouter l'éléphant</a>
             </div>
         </div>
         <?php

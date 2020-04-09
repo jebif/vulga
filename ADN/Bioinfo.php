@@ -10,7 +10,8 @@ require("./headerLoup.php");
 
 <p>Nous allons donc juxtaposer les séquences (la notre et celle de séquences de référence) de façon à obtenir le maximum de similitudes. C'est ce qu'on appelle un alignement de séquences.</p>
 
-<p>Un exemple pour mieux comprendre ? <a href= "./Align.php">Clique ici !</a></p>
+<p>Un exemple pour mieux comprendre ?</p>
+<p><a class="btn btn-outline-primary" role="button" href= "./Align.php">Voir l'exemple</a></p>
 
 <?php
 require("./footerLoup.php");

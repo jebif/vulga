@@ -54,17 +54,18 @@ $Q = strtok($all,'');
 $nb = strlen($all)-1;
 ?>
 
-<h1>
+<p>Tu trouveras ci-dessous le(s) alignements que tu as demandés. As-tu trouvé de qui venait la crotte ?  Comme les séquences sont longues, ils dépassent sur le droite de ton écran.</p>
 <?php if ($nb<6) {
 if ($nb>1) {?>
-<a href= "./Enquete.php?q=<?php echo $all ?>">Vous pouvez ajouter un nouvel alignement avant de répondre...
+<p>Si tu le souhaites, tu peux ajouter un nouvel alignement avant de répondre</p>
+<a class="btn btn-outline-primary btn-lg" role="button" href= "./Enquete.php?q=<?php echo $all ?>">Ajouter un alignement</a>
 <?php }else{ ?>
-<a href= "./Enquete.php?q=<?php echo $all ?>">Ajouter un nouvel alignement avant de répondre.
+<a class="btn btn-outline-primary btn-lg" role="button" href= "./Enquete.php?q=<?php echo $all ?>">Ajouter un alignement</a>
 <?php }
 }
 ?>
-</a></h1>
-<br>
+</p>
+
 <img src="./EcoleADN/interface1.png" alt = "">
 <?php
 for ($i =1; $i<= $nb; $i++){
@@ -75,24 +76,23 @@ echo "$T[$ani]<br>";
 <h2>Qui a fait cette crotte ?</h2>
 
 
-<?php if ($nb>1) { ?>
-<ul>
-<?php for ($i =1; $i<= $nb; $i++){
+<?php if ($nb>1) {
+echo '<p>';
+for ($i =1; $i<= $nb; $i++){
 $ani =$Q[$i];
  if ($ani == $chien) {?>
-<li><a href= "./EnqueteSuite.php?a=<?php echo $chien ?>&amp;q=<?php echo $all ?>">Le chien ?</a></li>
+<a class="btn btn-outline-primary btn-lg" role="button" href= "./EnqueteSuite.php?a=<?php echo $chien ?>&amp;q=<?php echo $all ?>">Le chien ?</a>
 <?php } if ($ani == $marmotte) {?>
-<li><a href= "./EnqueteSuite.php?a=<?php echo $marmotte ?>&amp;q=<?php echo $all ?>">Le marmotte ?</a></li>
+<a class="btn btn-outline-primary btn-lg" role="button" href= "./EnqueteSuite.php?a=<?php echo $marmotte ?>&amp;q=<?php echo $all ?>">Le marmotte ?</a>
 <?php } if ($ani == $lynx) {?>
-<li><a href= "./EnqueteSuite.php?a=<?php echo $lynx ?>&amp;q=<?php echo $all ?>">Le lynx ?</a></li>
+<a class="btn btn-outline-primary btn-lg" role="button" href= "./EnqueteSuite.php?a=<?php echo $lynx ?>&amp;q=<?php echo $all ?>">Le lynx ?</a>
 <?php } if ($ani == $loup) {?>
-<li><a href= "./EnqueteSuite.php?a=<?php echo $loup ?>&amp;q=<?php echo $all ?>">Le loup ?</a></li>
+<a class="btn btn-outline-primary btn-lg" role="button" href= "./EnqueteSuite.php?a=<?php echo $loup ?>&amp;q=<?php echo $all ?>">Le loup ?</a>
 <?php } if ($ani == $elephant) {?>
-<li><a href= "./EnqueteSuite.php?a=<?php echo $elephant ?>&amp;q=<?php echo $all ?>">L'éléphant ?</a></li>
+<a class="btn btn-outline-primary btn-lg" role="button" href= "./EnqueteSuite.php?a=<?php echo $elephant ?>&amp;q=<?php echo $all ?>">L'éléphant ?</a>
 <?php } if ($ani == $renard) {?>
-<li><a href= "./EnqueteSuite.php?a=<?php echo $renard ?>&amp;q=<?php echo $all ?>">Le renard ?</a></li>
-<?php }} ?>
-</ul>
+<a class="btn btn-outline-primary btn-lg" role="button" href= "./EnqueteSuite.php?a=<?php echo $renard ?>&amp;q=<?php echo $all ?>">Le renard ?</a>
+<?php }} ?></p>
 <?php }?>
 
 <?php

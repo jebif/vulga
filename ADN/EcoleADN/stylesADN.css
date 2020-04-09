@@ -343,33 +343,23 @@ color:green;
 color:grey;
 }
 
+.Z2, .C2, .A2, .GC, .T2{
+	font-size:30px;
+	font-family: monospace;
+}
+
 .Z2{
-font-size: 20px;
-font-family:"courier new";
-font-weight : bolder;
-color:grey;
+	color:grey;
 }
 .C2{
-font-size: 20px;
-font-family:"courier new";
-font-weight : bolder;
-color:blue;
+	color:blue;
 }
 .G2{
-font-size: 20px;
-font-family:"courier new";
-font-weight : bolder;
-color:orange;
+	color:orange;
 }
 .T2{
-font-size: 20px;
-font-family:"courier new";
-font-weight : bolder;
-color:green;
+	color:green;
 }
 .A2{
-font-size: 20px;
-font-family:"courier new";
-font-weight : bolder;
-color:red;
+	color:red;
 }
