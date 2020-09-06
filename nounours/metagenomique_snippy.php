@@ -13,7 +13,7 @@ require("headerNounours.php");
 
 <div class="row">
     <div class="col-5">
-        <p><img src="../media/nounours/microbiote_2.jpg" width="100%" /></p>
+        <p><img src="../media/nounours/microbiote_2.JPG" width="100%" /></p>
     </div>
 
     <div class="col-7">

@@ -14,7 +14,7 @@ require("headerNounours.php");
 
 <div class="row">
     <div class="col-4">
-        <p><img src="../media/nounours/microbiote_trie_nounours.jpg" width="100%" /></p>
+        <p><img src="../media/nounours/microbiote_trie_nounours.JPG" width="100%" /></p>
     </div>
 
     <div class="col-4">

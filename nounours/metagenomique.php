@@ -12,7 +12,7 @@ require("headerNounours.php");
 
 <h2>L'échantillon récolté chez Nounours</h2>
 
-<p><img src="../media/nounours/microbiote.jpg" width="50%" /></p>
+<p><img src="../media/nounours/microbiote.JPG" width="50%" /></p>
 
 <p>Pour mieux voir ce qu’il y a dans l’échantillon nous allons les trier.</p>
 
