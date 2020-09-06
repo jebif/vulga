@@ -204,6 +204,10 @@ padding: 20px 120px 0 120px;
 	}
 
 
+.card{
+	margin:5px;
+}
+
 #sub {
 text-align: center;
 font-size: 10px;
