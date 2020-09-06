@@ -2,24 +2,28 @@
 require("headerNounours.php");
 ?>
     <h1 class="titreApp">Les aventures de Nounours</h1>
-    <img src="./EcoleADN/Crotte.JPG" alt = "Crotte à analyser" class="rounded float-right pl-3">
-    <p>Nounours, la mascotte de notre association </p>
-    <p>Ils ont donc apporté cette croite au laboratoire d'écologie alpine (LECA). Les chercheurs du laboratoire ont décidé de mener l'enquête.</p>
-    <p>Afin d'identifier l'animal, ils ont extrait l'ADN de cette crotte. L'ADN est présent dans toutes les cellules d'un organisme. Il constitue une véritable carte d'identité. Une fois l'ADN obtenu, ils l'ont donc lu, ce qu'on appelle le séquençage de l'ADN. Ils ont obtenu la séquence suivante :</p>
-    <p><span class="z">
-ACACCCCTAC ATTCATATAT TGAATCACCC<br />
-CTACTGTGCT ATGTCAGTAT CTCCAGGTAA<br />
-ACCCTTCTCC CCTCCCCCTA TGTACGTCGT<br />
-GCATTAATGG TTTGCCCCAT GCATATAAGC<br />
-ATGTACATAA TATTATATCC TTACATAGGA<br />
-CATACTAACT CAATCTCACA ATTCACTGAC
-    </span></p>
+    <!--<img src="./EcoleADN/Crotte.JPG" alt = "Crotte à analyser" class="rounded float-right pl-3">-->
+    <p>Nounours, la mascotte de notre association Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum.</p>
 
-    <p>En tant que bioinformaticien en herbe, les chercheurs du LECA te demande ton aide pour identifier l'animal à partir de cette séquence d'ADN. Clique sur le bouton ci-dessous pour commencer.</p>
+    <div class="row">
+        <div class="card col-4">
+            <img src="../media/nounours/experts.png" class="card-img-top">
+            <h5 class="card-title"><a href="experts/index.php">Les experts bioinfo</a></h5>
+            <p class="card-text">Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+    <!--</div>-->
 
-    <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./Bioinfo.php">Démarrer</a></p>
+    <!--<div class="col-md-6"-->
+        <div class="card col-4">
+            <img src="../media/nounours/explorateurs.jpg" class="card-img-top">
+            <h5 class="card-title">Les explorateurs bioinfo</h5>
+            <p class="card-text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        </div>
+    </div>
 
-    <p>Pendant toute l'aventure, tu pourras revenir à cette page en cliquant sur le bouton "recommencer".</p>
+
+
+    <!--<p>Pendant toute l'aventure, tu pourras revenir à cette page en cliquant sur le bouton "recommencer".</p>-->
 
 <?php
 require("./footerNounours.php");
