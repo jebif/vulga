@@ -208,6 +208,29 @@ padding: 20px 120px 0 120px;
 	margin:5px;
 }
 
+.cercle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+	display: inline-block;
+}
+
+.cerclevert{
+	background: green;
+}
+
+.cerclejaune{
+	background: yellow;
+}
+
+.cerclerouge{
+	background: red;
+}
+
+.cerclebleu{
+	background: blue;
+}
+
 #sub {
 text-align: center;
 font-size: 10px;
