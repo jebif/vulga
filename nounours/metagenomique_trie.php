@@ -19,10 +19,10 @@ require("headerNounours.php");
 
     <div class="col-4">
         <p>Il y a 4 familles de bactéries dans cet échantillon :</p>
-        <div class="cercle cerclevert"></div>Versinia
-        <div class="cercle cerclebleu"></div>Bleufidus
-        <div class="cercle cerclerouge"></div>Rougeocoque
-        <div class="cercle cerclejaune"></div>Pseudojaunasse
+        <p><div class="cercle cerclevert"></div>Versinia</p>
+        <p><div class="cercle cerclebleu"></div>Bleufidus</p>
+        <p><div class="cercle cerclerouge"></div>Rougeocoque</p>
+        <p><div class="cercle cerclejaune"></div>Pseudojaunasse</p>
     </div>
 
     <div class="col-4">

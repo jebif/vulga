@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Lobster&display=swap');
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,100);
 
 @font-face {
@@ -7,7 +8,7 @@
 
 * {
 margin: 0;
-font-family: Lato;
+font-family: 'Andika', sans-serif;
 box-sizing: border-box;
 }
 
@@ -17,14 +18,16 @@ html{
 
 body {
 text-align: justify;
-font-size: 16px;
+font-size: 30px;
 margin: auto;
 position:relative;
 min-height: 100%;
+//background-color: #bde0ff;
+//color: #FF00FF;
 }
 
 address {
-line-height:17px;
+//line-height:17px;
 }
 
 /**************************/
@@ -72,7 +75,8 @@ line-height:17px;
 
 /* Bas de page*/
 #disclaimer{
-	background-color: #2B3F5E;
+	margin-top: 10px;
+	background-color: #A80532;
 	color: #FFFFFF;
 	text-align:center;
 	#position: fixed;
@@ -83,6 +87,11 @@ line-height:17px;
 
 #disclaimer a{
 	color: #AAA;
+}
+
+#disclaimer h1{
+	font-family: 'Lobster';
+	color:#FFF;
 }
 
 /* Menu */
@@ -145,10 +154,15 @@ padding-right: 3px;
 		}
 
 #content {
-background-color: #FFFFFF;
-font-size: 16px;
+//background-color: #FFFFFF;
+font-size: 1em;
 padding: 20px 120px 0 120px;
 -moz-border-radius : 20px 20px 20px 20px;
+}
+
+.bouton-enquete{
+	margin: 0 auto;
+	text-align:center;
 }
 
 .btn{
@@ -156,18 +170,25 @@ padding: 20px 120px 0 120px;
 }
 
 .btn-outline-primary{
-	color:#A80532 !important;
-	border-color: #A80532 !important;
-}
-
-.btn-outline-primary:hover{
 	color:#FFF !important;
 	background-color: #A80532 !important;
 }
 
+.btn-outline-primary:hover{
+	color:#A80532 !important;
+	border-color: #A80532 !important;
+}
+
+audio{
+	background: #A80532;
+}
+
 #content h1, #content h1 a{
+	font-family: 'Lobster';
 	color:#A80532;
-	font-size:25px;
+	font-size:2em;
+	text-align:center;
+	//text-transform: uppercase;
 }
 
 	#content h2{
@@ -188,6 +209,12 @@ padding: 20px 120px 0 120px;
 	text-align: left;
 	}
 
+	h5.card-title{
+		color:#A80532;
+		font-size:1.3em;
+		text-align: center;
+	}
+
 
 	#content li{
 	text-align: left;
@@ -198,7 +225,7 @@ padding: 20px 120px 0 120px;
 	#content p{
 	padding-top: 5px;
 	padding-bottom: 5px;
-	line-height:17px;
+	//line-height:17px;
 	}
 
 	#content li{
@@ -211,14 +238,15 @@ padding: 20px 120px 0 120px;
 
 
 .card{
-	margin:5px;
+	//margin:5px;
 }
 
 .cercle{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .cerclevert{
@@ -273,7 +301,7 @@ font-size: 12px;
 }
 
 	#head h1{
-	font-size: 25px;
+	font-size: 1.1em;
 	text-align: center;
 	}
 
