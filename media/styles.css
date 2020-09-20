@@ -1,7 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,100);
+
+@font-face {
+	font-family: "OpenDyslexic";
+	src:url("../media/OpenDyslexic3-Regular.woff2") format("woff2");
+}
+
 * {
 margin: 0;
-font-family: Lato;
+font-family: OpenDyslexic;
 box-sizing: border-box;
 }
 
@@ -11,7 +17,7 @@ html{
 
 body {
 text-align: justify;
-font-size: 15px;
+font-size: 16px;
 margin: auto;
 position:relative;
 min-height: 100%;
