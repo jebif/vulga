@@ -7,7 +7,7 @@ require("headerNounours.php");
 <div class="row">
     <div class="col-8">
         <audio controls autoplay src='../media/sons/intro_experts_bioinfo.mp3' type="audio/mpeg"></audio>
-        <p>Voici Nounours, notre mascotte. Il a très mal au ventre. Le médecin des peluches, le nounoursologue, est formel: il a attrapé une maladie que seule les ours en peluche peuvent attraper : <b>la blastouille</b> ! C’est une maladie bactérienne, mais de bactérie inconnue. Les médicaments que le nounoursologue lui a donné n’ont pas marché I </p>
+        <p>Voici Nounours, notre mascotte. Il a très mal au ventre. Le médecin des peluches, le nounoursologue, est formel: il a attrapé une maladie que seule les ours en peluche peuvent attraper : <b>la blastouille</b> ! C’est une maladie bactérienne, mais de bactérie inconnue. Les médicaments que le nounoursologue lui a donné n’ont pas marché !</p>
 
         <p>Aide nous à mener l'enquête pour identifier la bactérie responsable de la maladie de Nounours et lui trouver un médicament.</p>
 
