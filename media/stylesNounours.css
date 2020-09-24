@@ -18,16 +18,26 @@ html{
 
 body {
 text-align: justify;
-font-size: 30px;
+//font-size: 30px;
 margin: auto;
 position:relative;
 min-height: 100%;
-background:url('../media/nounours/background-labo.svg') no-repeat;
-background-size:cover;
-background-attachment:fixed;
+//background:url('../media/nounours/background-labo.svg') no-repeat;
 color:#FFF;
 //background-color: #bde0ff;
 //color: #FF00FF;
+}
+
+body.labo{
+	background:url('../media/nounours/background-labo.svg') no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+body.landscape{
+	background:url('../media/nounours/background-01.svg') no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
 }
 
 address {
@@ -245,8 +255,116 @@ audio{
 	}
 
 
+	.a, .c, .g, .t, .z, .A, .C, .G, .T, .Z{
+		font-family:monospace;
+		font-size:18px;
+		letter-spacing: 2px;
+		margin-top:2px;
+	}
+
+	.a, .A, .a a, .A a{
+	color:red;
+	}
+	.c, .C, .c a, .C a{
+	color:blue;
+	}
+	.g, .G, .g a, .G a{
+	color:orange;
+	}
+	.t, .T, .t a, .T a{
+	color:green;
+	}
+	.z, .Z, .z a, .Z a{
+	color:#FFFFFF;
+	}
+
+	.Z2, .C2, .A2, .GC, .T2{
+		font-size:30px;
+		font-family: monospace;
+	}
+
+	.Z2{
+		color:grey;
+	}
+	.C2{
+		color:blue;
+	}
+	.G2{
+		color:orange;
+	}
+	.T2{
+		color:green;
+	}
+	.A2{
+		color:red;
+	}
+
 .card{
 	//margin:5px;
+}
+
+.explication{
+	background-color: #FFFA;
+	padding:5px;
+}
+
+.explication p, .explication blockquote{
+	margin: 0;
+	color:#000;
+}
+
+.explication .bleuclair{
+	background-color:#9FC5E8;
+}
+
+.explication .bleu{
+	background-color:#6FA8DC;
+}
+
+.explication .rose{
+	background-color:#EA9999;
+}
+
+.explication .vert{
+	background-color:#B6D7A8;
+}
+
+.explication .orange{
+	background-color:#E69138;
+}
+
+.explication .jaune{
+	background-color:#FFD966;
+}
+
+.explication .violet{
+	background-color:#8E7CC3;
+}
+
+.explication blockquote p{
+	//font-family: 'Lobster';
+	font-style:italic;
+	letter-spacing: 2px;
+	margin-left: 20px;
+	margin-right: 5px;
+
+}
+
+
+.photoNounours{
+	background-color:#FFF;
+	padding: 10px 10px 0 10px;
+	width:100%;
+}
+
+.photoNounours .legende{
+	text-align:center;
+	color:#000;
+	font-family:'Lobster';
+}
+
+.photoNounours{
+
 }
 
 .cercle{
@@ -282,6 +400,20 @@ audio{
 	margin: 5px auto;
 }
 
+
+input.A, input.T, input.C, input.G{
+	background:none;
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+input.A:hover, input.T:hover, input.C:hover, input.G:hover{
+	text-decoration: underline;
+	margin:0;
+	padding:0;
+}
+
 .aligner_radio_toolbar input[type="radio"] {
   opacity: 0;
   position: fixed;
@@ -302,6 +434,15 @@ audio{
 
 .aligner_radio_toolbar input[type="radio"].disabled + label {
     background-color: #000000;
+	color: #CCCCCC;
+}
+
+.aligner_radio_toolbar input[type="radio"].disabled + label > .A,
+.aligner_radio_toolbar input[type="radio"].disabled + label > .T,
+.aligner_radio_toolbar input[type="radio"].disabled + label > .G,
+.aligner_radio_toolbar input[type="radio"].disabled + label > .C,
+{
+    color: #CCCCCC !important;
 }
 
 #sub {
@@ -418,48 +559,10 @@ text-align:center;
 .alignement{
 	#line-height: 1em !important;
 	margin-bottom: 0;
+	margin:0;
 }
 
-.a, .c, .g, .t, .z, .A, .C, .G, .T, .Z{
-	font-family:monospace;
-	font-size:18px;
-	letter-spacing: 2px;
-	margin-top:2px;
-}
-
-.a, .A, .a a, .A a{
-color:red;
-}
-.c, .C, .c a, .C a{
-color:blue;
-}
-.g, .G, .g a, .G a{
-color:orange;
-}
-.t, .T, .t a, .T a{
-color:green;
-}
-.z, .Z, .z a, .Z a{
-color:grey;
-}
-
-.Z2, .C2, .A2, .GC, .T2{
-	font-size:30px;
-	font-family: monospace;
-}
-
-.Z2{
-	color:grey;
-}
-.C2{
-	color:blue;
-}
-.G2{
-	color:orange;
-}
-.T2{
-	color:green;
-}
-.A2{
-	color:red;
+.alignement .A, .alignement .T, .alignement .C, .alignement .G{
+	margin-top:0;
+	line-height:22px;
 }
