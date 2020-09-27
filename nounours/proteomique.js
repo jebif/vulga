@@ -97,9 +97,7 @@
             window.location = "#alertDiv";
             return false;
         } else if (unselectedProtein == goodAnswer) {
-            alertDiv.className = "alert alert-success";
-            alertDiv.innerHTML = "C'est ça, tu as trouvé que la protéine 1 rend Nounours malade. Bravo !";
-            window.location = "#alertDiv";
+            window.location = "proteomique_regle.php?r=success";
             return true;
         } else if (unselectedProtein == defaultAnswer) {
             alertDiv.className = "alert alert-warning";

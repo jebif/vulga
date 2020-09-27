@@ -14,6 +14,10 @@ require("headerNounours.php");
     <li>Une seule conformation répond à toutes les règles. Sauras-tu la retrouver ?</li>
 </ul>
 
+<?php
+    if(! isset($_GET['r']) || isset($_GET['r']) && $_GET['r'] == "coude") {
+?>
+
 <h2>Sélectionnes les protéines vérifiant les règles</h2>
 <p>Tu peux naviguer entre les règles grâce aux flèches à gauche et à droite.</p>
 
@@ -76,7 +80,7 @@ require("headerNounours.php");
 
 <div role="alert" id="alertDiv" style="display:none;"></div>
 
-<div class="list-group">
+<div class="list-group" id="rules">
     <button class="list-group-item" onclick="clickOnProt(this, getActiveCarouselItem())" value="1">
         <img src="../media/nounours/proteomique/prot-2.png" width="20%" />
     </button>
@@ -98,6 +102,25 @@ require("headerNounours.php");
 </div>
 
 <button class="btn btn-outline-primary btn-lg" onclick="isItTheGoodAnswer()">Vérifier la protéine</button>
+<?php
+    } else if(isset($_GET['r']) && $_GET['r'] == "success") {
+?>
+
+<h2>Sélectionnes les protéines vérifiant la règle</h2>
+
+<div class="alert alert-success" role="alert">C'est ça, tu as trouvé que la protéine 1 qui rend Nonours malade. Bravo !</div>
+
+<div class="list-group">
+    <button class="list-group-item" value="1">
+        <img src="../media/nounours/proteomique/prot-2.png" width="20%" />
+    </button>
+</div>
+
+<a class="btn btn-outline-primary btn-lg" href="#">Suite atelier</a>
+
+<?php
+    }
+?>
 
 <script src="proteomique.js"></script>
 
