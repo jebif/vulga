@@ -14,27 +14,12 @@ require("headerNounours.php");
         </div>
     </div>
 
+
     <div class="col-8">
         <div class="explication">
-            <h2>Alors, quelle famille rend Nounours malade ?</h2>
+            <h2>Alors <?php echo $_SESSION['explorerName']; ?> quelle famille de bactéries rend Nounours malade ?</h2>
 
-            <p>Il y a 4 familles de bactéries dans cet échantillon :</p>
-            <a href=""<div class="cercle cerclevert"></div>
-            <p>Versinia</p>
-            <div class="cercle cerclebleu"></div>
-            <p>Bleufidus</p>
-            <div class="cercle cerclerouge"></div>
-            <p>Rougeocoque</p>
-            <div class="cercle cerclejaune"></div>
-            <p>Pseudojaunasse</p>
-
-        <?php
-        if(isset($_GET['a']) && $_GET['a'] == "unknown"){
-            ?>
-                <div class="alert alert-success" role="alert">Et oui, on ne peut pas répondre pour le moment.</div>
-                <a class="btn btn-outline-primary btn-lg" role="button" href= "./metagenomique_snippy.php">Continuer</a></p>
             <?php
-        }else{
             if(isset($_GET['a']) && $_GET['a'] == "versinia"){
                 ?><div class="alert alert-danger" role="alert">Versinia, es-tu sûr ?</div><?php
             }
@@ -48,14 +33,28 @@ require("headerNounours.php");
                 ?><div class="alert alert-danger" role="alert">Rougeocoque, es-tu sûr ?</div><?php
             }
             ?>
-            <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./metagenomique_trie.php?a=versinia">Versinia</a></p>
-            <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./metagenomique_trie.php?a=bleufidus">Bleufidus</a></p>
-            <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./metagenomique_trie.php?a=pseudojaunasse">Pseudojaunasse</a></p>
-            <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./metagenomique_trie.php?a=rougeocoque">Rougeocoque</a></p>
-            <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./metagenomique_trie.php?a=unknown">Je ne sais pas</a></p>
-            <?php
-        }
-        ?>
+            <div class="row">
+                <div class="col">
+                    <a href="./metagenomique_trie.php?a=versinia"><div class="cercle cerclevert"></div></a>
+                    <p><a href="./metagenomique_trie.php?a=versinia">Versinia</a></p>
+                </div>
+                <div class="col">
+                    <a href="./metagenomique_trie.php?a=bleufidus"><div class="cercle cerclebleu"></div></a>
+                    <p><a href="./metagenomique_trie.php?a=bleufidus">Bleufidus</a></p>
+                </div>
+                <div class="col">
+                    <a href="./metagenomique_trie.php?a=rougeocoque"><div class="cercle cerclerouge"></div></a>
+                    <p><a href="./metagenomique_trie.php?a=rougeocoque">Rougeocoque</a></p>
+                </div>
+                <div class="col">
+                    <a href="./metagenomique_trie.php?a=pseudojaunasse"><div class="cercle cerclejaune"></div></a>
+                    <p><a href="./metagenomique_trie.php?a=pseudojaunasse">Pseudojaunasse</a></p>
+                </div>
+                <div class="col">
+                    <a href="./metagenomique_trie.php?a=pseudojaunasse"><div class="cercle cercleblanc">?</div></a>
+                    <p><a href="./metagenomique_snippy.php">Je ne sais pas</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
