@@ -4,55 +4,38 @@ require("headerNounours.php");
 require("genomique_seqs.php");
 ?>
 
-<div class="ContentText">
 
 <h1>Quelle espèce de Versinia rend Nounours malade ?</h1>
 
-<p>Maintenant que nous savons que c'est une bactérie de la famille des Versinia qui rend Nounours malade, nous voulons savoir quelle espèce en particulier. Dans une même famille, certaines espèces peuvent être pathogènes et d'autres non.</p>
+<div class="row justify-content-left">
+    <div class="col-9">
+        <div class="explication">
+            <blockquote><p>&laquo;ouah super ! on peut maintenant me soigner alors! il suffit de m’enlever toutes les Versinia !&raquo;</p></blockquote>
+            <blockquote><p>&laquo;Non Nounours ! Ce n’est pas si simple. Regarde chez Snippy aussi, il y a des Versinia et je suis sure qu’elles l’aident à manger !&raquo;</p></blockquote>
+            <blockquote><p>&laquo;Dans la famille Versinia nous connaissons 4 bactéries : grognus, beatis, pustulus, et trifors.</p>
+                <p>Nous devons découvrir laquelle te rend malade pour pouvoir te soigner !&raquo;</p></blockquote>
 
-<p>Pour cela nous allons étudier l'ADN de la bactérie identifiée et la comparer avec celui des bactéries de cette famille.</p>
-
-<p>L'ADN est blablbla, A,T, G et C blablabla</p>
-
-<div class="row d-flex justify-content-center">
-    <div class="card col">
-        <img src="../media/nounours/beatis.svg" class="versinia cerclevert card-img-top" />
-        <div class="card-body">
-            <h5 class="card-title text-center">Versinia beatis</h5>
+            <div class="row">
+                <div class="col">
+                    <img src="../media/nounours/beatis.svg" class="versinia cerclevert" />
+                    <p>Versinia beatis</p>
+                </div>
+                <div class="col">
+                    <img src="../media/nounours/grognus.svg" class="versinia cerclevert" />
+                    <p>Versinia grognus</p>
+                </div>
+                <div class="col">
+                    <img src="../media/nounours/pustulus.svg" class="versinia cerclevert" />
+                    <p>Versinia pustulus</p>
+                </div>
+                <div class="col">
+                    <img src="../media/nounours/trifors.svg" class="versinia cerclevert" />
+                    <p>Versinia trifors</p>
+                </div>
+            </div>
+            <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./genomique_suite.php">Continuer</a></p>
         </div>
     </div>
-    <div class="card col">
-        <img src="../media/nounours/grognus.svg" class="versinia cerclevert card-img-top" />
-        <div class="card-body">
-            <h5 class="card-title text-center">Versinia grognus</h5>
-        </div>
-    </div>
-    <div class="card col">
-        <img src="../media/nounours/pustulus.svg" class="versinia cerclevert card-img-top" />
-        <div class="card-body">
-            <h5 class="card-title text-center">Versinia pustulus</h5>
-        </div>
-    </div>
-    <div class="card  col">
-        <img src="../media/nounours/trifors.svg" class="versinia cerclevert card-img-top" />
-        <div class="card-body">
-            <h5 class="card-title text-center">Versinia trifors</h5>
-        </div>
-    </div>
-</div>
-
-<p>Voici les séquences de nos 4 espèces : grognus, pustulus, beatis et trifors.</p>
-
-<p class='z'>>Versinia pustulus</p>
-<p><?php echo display_seq($pustulus); ?></p>
-<p class='z'>>Versinia grognus</p>
-<p><?php echo display_seq($grognus); ?>
-<p class='z'>>Versinia trifors</p>
-<p><?php echo display_seq($trifors); ?>
-<p class='z'>>Versinia beatis</p>
-<p><?php echo display_seq($beatis); ?>
-
-<p><a class="btn btn-outline-primary btn-lg" role="button" href= "./genomique_jeu.php">C'est parti</a></p>
 </div>
 
 <?php

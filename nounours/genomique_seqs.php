@@ -10,10 +10,14 @@ function exploded_seq($seq){
 }
 
 
-function display_seq($seq){
+function display_seq($seq, $disabled=0){
     $seqexploded = exploded_seq($seq);
     foreach($seqexploded as $nucl){
-        echo "<span class='$nucl'>$nucl</span>";
+        if($disabled){
+            echo "<span class='".$nucl." disabled'>$nucl</span>";
+        }else{
+            echo "<span class='$nucl'>$nucl</span>";
+        }
     }
 }
 
@@ -50,8 +54,10 @@ function display_seq_reads($seq_identified, $seq_select){
         $protId = 'seq'.$i;
         $disabled = '';
         $checked = '';
+        $disabledflag = 0;
         if(in_array($i,$seq_identified)){
             $disabled = ' class=\'disabled\' disabled';
+            $disabledflag = 1;
         }
 
         if($seq_select == $protId){
@@ -59,8 +65,8 @@ function display_seq_reads($seq_identified, $seq_select){
         }
 
         echo "<input type='radio' id='".$protId."' value='".$protId."' name='read'".$disabled.$checked.">";
-        echo "<label for='".$protId."'>";
-        display_seq($seq);
+        echo "<label for='".$protId."'".$disabled.">";
+        display_seq($seq, $disabledflag);
         echo '</label></input>';
     }
 }

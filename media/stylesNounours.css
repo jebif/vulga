@@ -279,6 +279,10 @@ audio{
 	color:#FFFFFF;
 	}
 
+	.disabled .a, .disabled .c, .disabled .g, .disabled .t, .disabled .z, .disabled .A, .disabled .C, .disabled .G, .disabled .T, .disabled .Z{
+		color: #CCC;
+	}
+
 	.Z2, .C2, .A2, .GC, .T2{
 		font-size:30px;
 		font-family: monospace;
@@ -445,20 +449,25 @@ input.A:hover, input.T:hover, input.C:hover, input.G:hover{
 
 .aligner_radio_toolbar input[type="radio"]:checked + label {
     background-color: #525252;
+	border: 2px solid #DDD;
 }
 
 .aligner_radio_toolbar input[type="radio"].disabled + label {
-    background-color: #000000;
+    background-color: #38761D;
 	color: #CCCCCC;
 }
 
-.aligner_radio_toolbar input[type="radio"].disabled + label > .A,
-.aligner_radio_toolbar input[type="radio"].disabled + label > .T,
-.aligner_radio_toolbar input[type="radio"].disabled + label > .G,
-.aligner_radio_toolbar input[type="radio"].disabled + label > .C,
-{
-    color: #CCCCCC !important;
+input[type="submit"].nobutton{
+	background: none;
+	border:none;
+	color: #000;
 }
+
+input[type="submit"].nobutton:hover{
+	text-decoration: underline;
+}
+
+
 
 #sub {
 text-align: center;
