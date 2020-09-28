@@ -17,12 +17,12 @@ function display_seq($seq){
     }
 }
 
-function display_seq_jeu($seq, $value, $pos_identified){
+function display_seq_jeu($seq, $value, $pos_identified, $pos_select){
     $seqexploded = exploded_seq($seq);
     for($i = 0; $i < count($seqexploded); $i++){
         $nucl = $seqexploded[$i];
         $nuclvalue = $value+$i;
-        if(in_array($nuclvalue,$pos_identified)){
+        if(in_array($nuclvalue,$pos_identified) || ($nuclvalue == $pos_select)){
             echo "<span class='$nucl'>$nucl</span>";
         }else{
             echo "<input type='submit' name='pos_".$nuclvalue."' value='".$nucl."' class='".$nucl."'>";
@@ -30,17 +30,35 @@ function display_seq_jeu($seq, $value, $pos_identified){
     }
 }
 
-function display_seq_reads($seq_identified){
+function display_seq_jeu_id($seq, $value, $pos_identified, $pos_select){
+    $seqexploded = exploded_seq($seq);
+    for($i = 0; $i < count($seqexploded); $i++){
+        $nucl = $seqexploded[$i];
+        $nuclvalue = $value+$i;
+        if(in_array($nuclvalue,$pos_identified)){
+            echo "<span class='$nucl'>$nucl</span>";
+        }else{
+            echo "<span class='Z'>&nbsp;</span>";
+        }
+    }
+}
+
+function display_seq_reads($seq_identified, $seq_select){
     $seqs = ["TAAGTTGG", "GGATAACT", "TAAGTTGG", "GGATAACT",  "CCTGCCTG", "TAACTAGT"];
     for($i = 0; $i < count($seqs); $i++){
         $seq = $seqs[$i];
         $protId = 'seq'.$i;
         $disabled = '';
+        $checked = '';
         if(in_array($i,$seq_identified)){
-            $disabled = ' disabled class=\'disabled\'';
+            $disabled = ' class=\'disabled\' disabled';
         }
 
-        echo "<input type='radio' id='".$protId."' value='".$protId."' name='read'".$disabled.">";
+        if($seq_select == $protId){
+            $checked = ' checked';
+        }
+
+        echo "<input type='radio' id='".$protId."' value='".$protId."' name='read'".$disabled.$checked.">";
         echo "<label for='".$protId."'>";
         display_seq($seq);
         echo '</label></input>';

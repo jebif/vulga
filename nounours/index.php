@@ -1,4 +1,5 @@
 <?php
+$bodyclass = 'landscape';
 require("headerNounours.php");
 ?>
     <h1 class="titreApp">Les aventures de Nounours</h1>

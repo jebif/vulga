@@ -29,7 +29,8 @@ color:#FFF;
 }
 
 body.labo{
-	background:url('../media/nounours/background-labo.svg') no-repeat;
+	background-image:url("../media/nounours/background-labo.svg");
+	background-repeat: no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
 }
@@ -376,19 +377,23 @@ audio{
 }
 
 .cerclevert{
-	background: green;
+	background: #38761D;
+	border: 1px solid #FFF;
 }
 
 .cerclejaune{
-	background: yellow;
+	background: #EFC22E;
+	border: 1px solid #FFF;
 }
 
 .cerclerouge{
-	background: red;
+	background: #CC0000;
+	border: 1px solid #FFF;
 }
 
 .cerclebleu{
-	background: blue;
+	background: #1155CC;
+	border: 1px solid #FFF;
 }
 
 .versinia{

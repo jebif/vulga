@@ -25,7 +25,13 @@ require("headerNounours.php");
             <p>Aide-nous à mener l'enquête pour identifier la bactérie responsable de la maladie de Nounours et lui trouver un médicament.</p>
         </div>
 
-        <p class="text-center"><a class="btn btn-outline-primary btn-lg bouton-enquete" role="button" href= "./fiche_enquete.php">Commencer l'enquête</a></p>
+        <p class="text-center">
+            <form method="post" action="./fiche_enquete.php">
+                <label for="explorerName" />Pour commencer, indique ton nom d'expert :</label>
+                <input type="text" class="form-control form-control-lg" name="explorerName" id="explorerName" required />
+                <input type="submit" class="btn btn-outline-primary btn-lg bouton-enquete" role="button" value="Commencer l'enquête" />
+            </form>
+        </p>
     </div>
 
     <div class="col-3 justify-content-center">

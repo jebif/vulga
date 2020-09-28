@@ -1,4 +1,5 @@
 <?php
+$bodyclass = 'labo';
 require("headerNounours.php");
 ?>
 

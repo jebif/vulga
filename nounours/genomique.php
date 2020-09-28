@@ -1,4 +1,5 @@
 <?php
+$bodyclass = 'labo';
 require("headerNounours.php");
 require("genomique_seqs.php");
 ?>
@@ -15,25 +16,25 @@ require("genomique_seqs.php");
 
 <div class="row d-flex justify-content-center">
     <div class="card col">
-        <img src="../media/nounours/Beatis.png" class="versinia cerclevert card-img-top" />
+        <img src="../media/nounours/beatis.svg" class="versinia cerclevert card-img-top" />
         <div class="card-body">
             <h5 class="card-title text-center">Versinia beatis</h5>
         </div>
     </div>
     <div class="card col">
-        <img src="../media/nounours/Grognus.png" class="versinia cerclevert card-img-top" />
+        <img src="../media/nounours/grognus.svg" class="versinia cerclevert card-img-top" />
         <div class="card-body">
             <h5 class="card-title text-center">Versinia grognus</h5>
         </div>
     </div>
     <div class="card col">
-        <img src="../media/nounours/Pustulus.png" class="versinia cerclevert card-img-top" />
+        <img src="../media/nounours/pustulus.svg" class="versinia cerclevert card-img-top" />
         <div class="card-body">
             <h5 class="card-title text-center">Versinia pustulus</h5>
         </div>
     </div>
     <div class="card  col">
-        <img src="../media/nounours/Trifors.png" class="versinia cerclevert card-img-top" />
+        <img src="../media/nounours/trifors.svg" class="versinia cerclevert card-img-top" />
         <div class="card-body">
             <h5 class="card-title text-center">Versinia trifors</h5>
         </div>

@@ -1,32 +1,33 @@
 <?php
+$bodyclass = 'labo';
 require("headerNounours.php");
 ?>
 
 <h1>Quelle est la famille de bactéries responsable de la blastouille de Nounours ?</h1>
 
-<p>Il faut donc que l'on identifie la famille de bactérie qui rend Nounours malade.</p>
-
-<p>Pour cela on va regarder dans son microbiote intestinal. Le microbiote est essentiel pour vivre. On va donc en prendre qu'un tout petit morceau. On parle d'échantillon.</p>
-
-<p>Une fois notre échantillon prelevé on peut voir toutes les bactéries qui sont dedans !</p>
-
-<h2>L'échantillon récolté chez Nounours</h2>
-
-<div class="row">
+<div class="row justify-content-left">
     <div class="col-4">
-        <p><img src="../media/nounours/microbiote_trie_nounours.JPG" width="100%" /></p>
+        <div class="explication">
+            <p>Merci <?php echo $_SESSION['explorerName']; ?> ! Grâce à toi on voit bien les familles !</p>
+
+            <p><img src="../media/nounours/sample_nounours_ordered.svg" width="100%" /></p>
+        </div>
     </div>
 
-    <div class="col-4">
-        <p>Il y a 4 familles de bactéries dans cet échantillon :</p>
-        <p><div class="cercle cerclevert"></div>Versinia</p>
-        <p><div class="cercle cerclebleu"></div>Bleufidus</p>
-        <p><div class="cercle cerclerouge"></div>Rougeocoque</p>
-        <p><div class="cercle cerclejaune"></div>Pseudojaunasse</p>
-    </div>
+    <div class="col-8">
+        <div class="explication">
+            <h2>Alors, quelle famille rend Nounours malade ?</h2>
 
-    <div class="col-4">
-        <h2>Alors, quelle famille rend Nounours malade ?</h2>
+            <p>Il y a 4 familles de bactéries dans cet échantillon :</p>
+            <a href=""<div class="cercle cerclevert"></div>
+            <p>Versinia</p>
+            <div class="cercle cerclebleu"></div>
+            <p>Bleufidus</p>
+            <div class="cercle cerclerouge"></div>
+            <p>Rougeocoque</p>
+            <div class="cercle cerclejaune"></div>
+            <p>Pseudojaunasse</p>
+
         <?php
         if(isset($_GET['a']) && $_GET['a'] == "unknown"){
             ?>
@@ -55,7 +56,9 @@ require("headerNounours.php");
             <?php
         }
         ?>
+        </div>
     </div>
+</div>
 
 <?php
 require("footerNounours.php");

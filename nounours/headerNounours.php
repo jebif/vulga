@@ -16,6 +16,11 @@
 		<meta name="language" content="fr">
 	</head>
 <?php
+
+if(!isset($_SESSION['explorerName'])){
+	$_SESSION['explorerName'] = 'joueur';
+}
+
 if(isset($bodyclass)){
 	echo "<body class='".$bodyclass."'>";
 }else{
