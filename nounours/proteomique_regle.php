@@ -17,235 +17,93 @@ require("headerNounours.php");
 <?php
     if(! isset($_GET['r']) || isset($_GET['r']) && $_GET['r'] == "coude") {
 ?>
-<h2>Première règle à vérifier :</h2>
-<div class="row">
-    <div class="col-8">
-        <li>
-            <ol>3 acides aminés bordeaux suivis de 3 vert forment un coude.</ol>
-        </li>
+
+<h2>Sélectionnes les protéines vérifiant les règles</h2>
+<p>Tu peux naviguer entre les règles grâce aux flèches à gauche et à droite.</p>
+
+<div id="regles" class="carousel slide" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+        <li data-target="#regles" data-slide-to="0" class="active"></li>
+        <li data-target="#regles" data-slide-to="1"></li>
+        <li data-target="#regles" data-slide-to="2"></li>
+        <li data-target="#regles" data-slide-to="3"></li>
+        <li data-target="#regles" data-slide-to="4"></li>
+    </ol>
+
+    <div class="carousel-inner" style="width: 70%; margin: auto;">
+        <div class="carousel-item active" id=coude>
+            <img src="../media/nounours/proteomique/coude.png" width="20%" />
+            <div class="carousel-caption">
+                <h5>Le coude</h5>
+                <p>3 acides aminés bordeaux suivis de 3 vert forment un coude.</p>
+            </div>
+        </div>
+        <div class="carousel-item" id="membrane">
+            <img src="../media/nounours/proteomique/membrane.png" width="20%" />
+            <div class="carousel-caption">
+                <h5>La membrane</h5>
+                <p>À proximité d’une paroi marron, les acides aminés cyan entre en contact avec celle-ci.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../media/nounours/proteomique/nocontact.png" width="20%" />
+            <div class="carousel-caption">
+                <h5>Le sans-contact</h5>
+                <p>Les acides aminés bordeaux et cyan ne sont jamais en contact.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../media/nounours/proteomique/contact.png" width="20%" />
+            <div class="carousel-caption">
+                <h5>Le contact</h5>
+                <p>Les acides aminés orange séparés par 2 à 6 autres acides aminés sont en contact.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../media/nounours/proteomique/demitour.png" width="20%" />
+            <div class="carousel-caption">
+                <h5>Le demi-tour</h5>
+                <p>2 acides aminés bordeaux précédés et suivis par 2 vert forment un demi-tour.</p>
+            </div>
+        </div>
     </div>
-    <div class="col-4">
-        <img src="../media/nounours/proteomique/coude.png" width="40%" />
-    </div>
+    
+    <a class="carousel-control-prev" href="#regles" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#regles" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 
-<h2>Sélectionnes les protéines vérifiant la règle</h2>
+<div role="alert" id="alertDiv" style="display:none;"></div>
 
-<div class="alert alert-danger" role="alert" id="warningDiv" style="display:none;">Es-tu sur d'avoir sélectioné toutes les protéines ?</div>
-
-<div class="list-group">
-    <button class="list-group-item" onclick="clickOnProt(this, 'coude')" value="1">
+<div class="list-group" id="rules">
+    <button class="list-group-item" onclick="clickOnProt(this, getActiveCarouselItem())" value="1">
         <img src="../media/nounours/proteomique/prot-2.png" width="20%" />
     </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'coude')" value="2">
+    <button class="list-group-item" onclick="clickOnProt(this, getActiveCarouselItem())" value="2">
         <img src="../media/nounours/proteomique/prot-3.png" width="20%" />
     </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'coude')" value="3">
+    <button class="list-group-item" onclick="clickOnProt(this, getActiveCarouselItem())" value="3">
         <img src="../media/nounours/proteomique/prot-4.png" width="40%" />
     </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'coude')" value="4">
+    <button class="list-group-item" onclick="clickOnProt(this, getActiveCarouselItem())" value="4">
         <img src="../media/nounours/proteomique/prot-5.png" width="20%" />
     </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'coude')" value="5">
+    <button class="list-group-item" onclick="clickOnProt(this, getActiveCarouselItem())" value="5">
         <img src="../media/nounours/proteomique/prot-6.png" width="20%" />
     </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'coude')" value="6">
+    <button class="list-group-item" onclick="clickOnProt(this, getActiveCarouselItem())" value="6">
         <img src="../media/nounours/proteomique/prot-7.png" width="20%" />
     </button>
 </div>
 
-<button class="btn btn-outline-primary btn-lg" onclick="activeButton('coude', 'membrane')">Règle suivante</button>
-
+<button class="btn btn-outline-primary btn-lg" onclick="isItTheGoodAnswer()">Vérifier la protéine</button>
 <?php
-    }
-?>
-
-<?php
-    if(isset($_GET['r']) && $_GET['r'] == "membrane") {
-?>
-<h2>Deuxième règle à vérifier :</h2>
-<div class="row">
-    <div class="col-6">
-        <li>
-            <ol>À proximité d’une paroi marron, les acides aminés cyan entre en contact avec celle-ci.</ol>
-        </li>
-    </div>
-    <div class="col-4">
-        <img src="../media/nounours/proteomique/membrane.png" width="20%" />
-    </div>
-</div>
-
-<h2>Sélectionnes les protéines vérifiant la règle</h2>
-
-<div class="alert alert-danger" role="alert" id="warningDiv" style="display:none;">Es-tu sur d'avoir sélectioné toutes les protéines ?</div>
-
-<div class="list-group">
-    <button class="list-group-item" onclick="clickOnProt(this, 'membrane')" value="1">
-        <img src="../media/nounours/proteomique/prot-2.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'membrane')" value="2" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-3.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'membrane')" value="3">
-        <img src="../media/nounours/proteomique/prot-4.png" width="40%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'membrane')" value="4">
-        <img src="../media/nounours/proteomique/prot-5.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'membrane')" value="5">
-        <img src="../media/nounours/proteomique/prot-6.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'membrane')" value="6" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-7.png" width="20%" />
-    </button>
-</div>
-
-<button class="btn btn-outline-primary btn-lg" onclick="activeButton('membrane', 'nocontact')">Règle suivante</button>
-
-<?php
-    }
-?>
-
-<?php
-    if(isset($_GET['r']) && $_GET['r'] == "nocontact") {
-?>
-<h2>Deuxième règle à vérifier :</h2>
-<div class="row">
-    <div class="col-6">
-        <li>
-            <ol>Les acides aminés bordeaux et cyan ne sont jamais en contact.</ol>
-        </li>
-    </div>
-    <div class="col-4">
-        <img src="../media/nounours/proteomique/nocontact.png" width="20%" />
-    </div>
-</div>
-
-<h2>Sélectionnes les protéines vérifiant la règle</h2>
-
-<div class="alert alert-danger" role="alert" id="warningDiv" style="display:none;">Es-tu sur d'avoir sélectioné toutes les protéines ?</div>
-
-<div class="list-group">
-    <button class="list-group-item" onclick="clickOnProt(this, 'nocontact')" value="1">
-        <img src="../media/nounours/proteomique/prot-2.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'nocontact')" value="2" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-3.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'nocontact')" value="3">
-        <img src="../media/nounours/proteomique/prot-4.png" width="40%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'nocontact')" value="4" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-5.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'nocontact')" value="5">
-        <img src="../media/nounours/proteomique/prot-6.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'nocontact')" value="6" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-7.png" width="20%" />
-    </button>
-</div>
-
-<button class="btn btn-outline-primary btn-lg" onclick="activeButton('nocontact', 'contact')">Règle suivante</button>
-
-<?php
-    }
-?>
-
-<?php
-    if(isset($_GET['r']) && $_GET['r'] == "contact") {
-?>
-<h2>Deuxième règle à vérifier :</h2>
-<div class="row">
-    <div class="col-6">
-        <li>
-            <ol>Les acides aminés orange séparés par 2 à 6 autres acides aminés sont en contact.</ol>
-        </li>
-    </div>
-    <div class="col-4">
-        <img src="../media/nounours/proteomique/contact.png" width="20%" />
-    </div>
-</div>
-
-<h2>Sélectionnes les protéines vérifiant la règle</h2>
-
-<div class="alert alert-danger" role="alert" id="warningDiv" style="display:none;">Es-tu sur d'avoir sélectioné toutes les protéines ?</div>
-
-<div class="list-group">
-    <button class="list-group-item" onclick="clickOnProt(this, 'contact')" value="1">
-        <img src="../media/nounours/proteomique/prot-2.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'contact')" value="2" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-3.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'contact')" value="3">
-        <img src="../media/nounours/proteomique/prot-4.png" width="40%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'contact')" value="4" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-5.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'contact')" value="5">
-        <img src="../media/nounours/proteomique/prot-6.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'contact')" value="6" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-7.png" width="20%" />
-    </button>
-</div>
-
-<button class="btn btn-outline-primary btn-lg" onclick="activeButton('contact', 'demitour')">Règle suivante</button>
-
-<?php
-    }
-?>
-
-<?php
-    if(isset($_GET['r']) && $_GET['r'] == "demitour") {
-?>
-<h2>Deuxième règle à vérifier :</h2>
-<div class="row">
-    <div class="col-6">
-        <li>
-            <ol>2 acides aminés bordeaux précédés et suivis par 2 vert forment un demi-tour.</ol>
-        </li>
-    </div>
-    <div class="col-4">
-        <img src="../media/nounours/proteomique/demitour.png" width="20%" />
-    </div>
-</div>
-
-<h2>Sélectionnes les protéines vérifiant la règle</h2>
-
-<div class="alert alert-danger" role="alert" id="warningDiv" style="display:none;">Es-tu sur d'avoir sélectioné toutes les protéines ?</div>
-
-<div class="list-group">
-    <button class="list-group-item" onclick="clickOnProt(this, 'demitour')" value="1">
-        <img src="../media/nounours/proteomique/prot-2.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'demitour')" value="2" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-3.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'demitour')" value="3">
-        <img src="../media/nounours/proteomique/prot-4.png" width="40%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'demitour')" value="4" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-5.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'demitour')" value="5" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-6.png" width="20%" />
-    </button>
-    <button class="list-group-item" onclick="clickOnProt(this, 'demitour')" value="6" style="display:none;">
-        <img src="../media/nounours/proteomique/prot-7.png" width="20%" />
-    </button>
-</div>
-
-<button class="btn btn-outline-primary btn-lg" onclick="activeButton('demitour', 'success')">Règle suivante</button>
-
-<?php
-    }
-?>
-
-<?php
-    if(isset($_GET['r']) && $_GET['r'] == "success") {
+    } else if(isset($_GET['r']) && $_GET['r'] == "success") {
 ?>
 
 <h2>Sélectionnes les protéines vérifiant la règle</h2>
