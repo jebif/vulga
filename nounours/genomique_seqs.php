@@ -48,7 +48,7 @@ function display_seq_jeu_id($seq, $value, $pos_identified, $pos_select){
 }
 
 function display_seq_reads($seq_identified, $seq_select){
-    $seqs = ["TAAGTTGG", "GGATAACT", "TAAGTTGG", "GGATAACT",  "CCTGCCTG", "TAACTAGT"];
+    $seqs = ["TAAGTTGG", "GGATAACT", "TAAGTTGG", "GGATAACT",  "CCTGCCTG", "GGATAACT"];
     for($i = 0; $i < count($seqs); $i++){
         $seq = $seqs[$i];
         $protId = 'seq'.$i;
@@ -80,11 +80,9 @@ function display_seq_reads($seq_identified, $seq_select){
 function test_alignement($seq, $pos){
     if(($seq == 0 || $seq == 2) && ($pos == 308 || $pos == 213)){
         return 1;
-    }else if(($seq == 1 || $seq == 3) && ($pos == 108 || $pos == 316)){
+    }else if(($seq == 1 || $seq == 3 || $seq == 5) && ($pos == 108 || $pos == 316 || $pos = 400)){
         return 1;
     }else if($seq == 4 && $pos == 300){
-        return 1;
-    }else if($seq == 5 && $pos == 403){
         return 1;
     }
 

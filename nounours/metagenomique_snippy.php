@@ -37,11 +37,11 @@ require("headerNounours.php");
             ?>
             <div class="row">
                 <div class="col">
-                    <a href="./metagenomique_trie.php?a=versinia"><div class="cercle cerclevert"></div></a>
+                    <a href="./metagenomique_snippy.php?a=versinia"><div class="cercle cerclevert"></div></a>
                     <p><a href="./metagenomique_snippy.php?a=versinia">Versinia</a></p>
                 </div>
                 <div class="col">
-                    <a href="./metagenomique_trie.php?a=bleufidus"><div class="cercle cerclebleu"></div></a>
+                    <a href="./metagenomique_snippy.php?a=bleufidus"><div class="cercle cerclebleu"></div></a>
                     <p><a href="./metagenomique_snippy.php?a=bleufidus">Bleufidus</a></p>
                 </div>
                 <div class="col">
@@ -49,11 +49,11 @@ require("headerNounours.php");
                     <p><a href="./metagenomique_snippy.php?a=rougeocoque">Rougeocoque</a></p>
                 </div>
                 <div class="col">
-                    <a href="./metagenomique_trie.php?a=pseudojaunasse"><div class="cercle cerclejaune"></div></a>
+                    <a href="./metagenomique_snippy.php?a=pseudojaunasse"><div class="cercle cerclejaune"></div></a>
                     <p><a href="./metagenomique_snippy.php?a=pseudojaunasse">Pseudojaunasse</a></p>
                 </div>
                 <div class="col">
-                    <a href="./metagenomique_trie.php?a=pseudojaunasse"><div class="cercle cercleblanc">?</div></a>
+                    <a href="./metagenomique_snippy.php?a=unknown"><div class="cercle cercleblanc">?</div></a>
                     <p><a href="./metagenomique_snippy.php?a=unknown">Je ne sais pas</a></p>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <?php
-$bodyclass = 'labo';
+$bodyclass = 'labo2';
 require("headerNounours.php");
 require("genomique_seqs.php");
 ?>

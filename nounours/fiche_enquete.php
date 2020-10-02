@@ -17,7 +17,7 @@ if(isset($_POST['explorerName'])){
         <a class="btn btn-outline-primary btn-lg" role="button" href="./metagenomique.php">Commencer l'enquête</a>
 
         <p class="fiche_enquete">
-            <?php include('../media/nounours/cluedo2.svg'); ?>
+            <?php include('../media/nounours/cluedo-1.svg'); ?>
         </p>
     </div>
 </div>

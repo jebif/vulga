@@ -29,16 +29,42 @@ color:#FFF;
 }
 
 body.labo{
-	background-image:url("../media/nounours/background-labo.svg");
+	background-image:url("../media/nounours/background-labo1.svg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+body.labo2{
+	background-image:url("../media/nounours/background-labo2.svg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+body.labo3{
+	background-image:url("../media/nounours/background-labo3.svg");
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
 }
 
 body.landscape{
-	background:url('../media/nounours/background-01.svg') no-repeat;
+	background:url('../media/nounours/background-01.svg');
+	background-repeat: no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
+}
+
+body.congres{
+	background:url('../media/nounours/background-conf.svg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+body.remerciements{
+	background-color: #FFF;
 }
 
 address {
@@ -355,21 +381,40 @@ audio{
 
 }
 
-
 .photoNounours{
 	background-color:#FFF;
 	padding: 10px 10px 0 10px;
 	width:100%;
 }
 
+.whitebg{
+	border: 1px solid #000;
+	border-radius: 5%;
+}
+
 .photoNounours .legende{
 	text-align:center;
 	color:#000;
 	font-family:'Lobster';
+	margin-bottom: 0;
+	font-size:20px;
+}
+.photoNounours .legendeTexte{
+	color: #000;
+	text-align:center;
 }
 
-.photoNounours{
+.photoNounours ul.legendeTexte {
+	width: 50%;
+	margin: auto;
+}
 
+body.remerciements p{
+	color:#000;
+}
+
+.blocRemerciements{
+	margin-bottom: 5px;
 }
 
 .cercle{

@@ -12,7 +12,7 @@ require("headerNounours.php");
             <p>Voilà ta fiche d’enquête remplie avec ces nouvelles informations !</p>
             <a class="btn btn-outline-primary btn-lg" role="button" href= "./congres.php">Continuer</a>
 
-            <p><?php include('../media/nounours/cluedo2.svg'); ?></p>
+            <p><?php include('../media/nounours/cluedo-4.svg'); ?></p>
         </div>
     </div>
 </div>

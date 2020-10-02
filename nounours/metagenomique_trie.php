@@ -51,7 +51,7 @@ require("headerNounours.php");
                     <p><a href="./metagenomique_trie.php?a=pseudojaunasse">Pseudojaunasse</a></p>
                 </div>
                 <div class="col">
-                    <a href="./metagenomique_trie.php?a=pseudojaunasse"><div class="cercle cercleblanc">?</div></a>
+                    <a href="./metagenomique_snippy.php"><div class="cercle cercleblanc">?</div></a>
                     <p><a href="./metagenomique_snippy.php">Je ne sais pas</a></p>
                 </div>
             </div>

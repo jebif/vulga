@@ -9,7 +9,7 @@
 		<script src="https://kit.fontawesome.com/afa8ecb058.js" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="../media/stylesNounours.css" type="text/css">
-		<link rel="icon" href="../ADN/EcoleADN/JeBiF.jpg">
+		<link rel="icon" href="../media/favicon.jpg">
 
 		<meta charset="utf-8">
 		<meta name="title" content="Les aventures de Nounours - JeBiF">
