@@ -107,18 +107,18 @@ if(array_key_exists('validate', $_POST)){
                 <input type='hidden' name='seqid' value='<?php echo implode('',$seq_identified); ?>'>
                 <input type='hidden' name='posid' value='<?php echo implode('',$pos_identified); ?>'>
 
-                <p>Alors <?php echo $_SESSION['explorerName']; ?>, as tu une idée de quelle bactérie rend Nounours malade ?</p>
+                <p>Alors <?php echo $_SESSION['explorerName']; ?>, as-tu une idée de quelle bactérie rend Nounours malade&nbsp;?</p>
 
                 <?php
                     $flagbacto = 0;
                     if(isset($_POST['bacto'])){
                         if($_POST['bacto'] != "Versinia pustulus"){
                         ?>
-                            <div class="alert alert-danger" role="alert">As-tu besoin d'aide ? Regarde bien l'alignement !</div>
+                            <div class="alert alert-danger" role="alert">As-tu besoin d'aide&nbsp;? Regarde bien l'alignement&nbsp;!</div>
                         <?php
                         }else{
                         ?>
-                            <div class="alert alert-success" role="alert">Eh oui ! Contrairement aux autres bactéries, nous avons pu reconstituer l'intégralité du génome de Versinia pustulus à partir de l'ADN prélevé dans le microbiote de Nounours. Il s'agit donc bien de la bactérie responsable de la maladie de Nounours</div>
+                            <div class="alert alert-success" role="alert">Eh oui&nbsp;! Contrairement aux autres bactéries, nous avons pu reconstituer l'intégralité du génome de Versinia pustulus à partir de l'ADN prélevé dans le microbiote de Nounours. Il s'agit donc bien de la bactérie responsable de la maladie de Nounours.</div>
                             <p><a class="btn btn-outline-primary btn-lg" role="button" href="./genomique_conclusion.php">Continuer</a></p>
                         <?php
                             $flagbacto = 1;
@@ -127,19 +127,54 @@ if(array_key_exists('validate', $_POST)){
                 ?>
 
                 <p>
-                <img src="../media/nounours/beatis.svg" class="versinia cerclevert" />
-                <?php if($flagbacto){ echo "Versinia beatis"; }else{ echo "<input type='submit' name='bacto' value='Versinia beatis' class='nobutton' />"; }?></p>
+                    <?php if($flagbacto){
+                        ?>
+                        <img src="../media/nounours/beatis.svg" class="versinia cerclevert" />Versinia beatis
+                        <?php
+                    }else{
+                    ?>
+                    <input type='image' name='bacto' value='Versinia beatis' class='versinia cerclevert' src="../media/nounours/beatis.svg" />
+                    <input type='submit' name='bacto' value='Versinia beatis' class='nobutton' />
+                    <?php }
+                    ?>
+                </p>
 
                 <p>
-                <img src="../media/nounours/grognus.svg" class="versinia cerclevert" />
-                <?php if($flagbacto){ echo "Versinia grognus"; }else{ echo "<input type='submit' name='bacto' value='Versinia grognus' class='nobutton' />"; }?></p>
-
-                <p><img src="../media/nounours/pustulus.svg" class="versinia cerclevert" />
-                    <?php if($flagbacto){ echo "Versinia pustulus"; }else{ echo "<input type='submit' name='bacto' value='Versinia pustulus' class='nobutton' />"; }?></p>
+                    <?php if($flagbacto){
+                        ?>
+                        <img src="../media/nounours/grognus.svg" class="versinia cerclevert" />Versinia grognus
+                        <?php
+                    }else{
+                    ?>
+                    <input type='image' name='bacto' value='Versinia grognus' class='versinia cerclevert' src="../media/nounours/grognus.svg" />
+                    <input type='submit' name='bacto' value='Versinia grognus' class='nobutton' />
+                    <?php }
+                    ?>
+                </p>
 
                 <p>
-                <img src="../media/nounours/trifors.svg" class="versinia cerclevert" />
-                <?php if($flagbacto){ echo "Versinia trifors"; }else{ echo "<input type='submit' name='bacto' value='Versinia trifors' class='nobutton' />"; }?></p>
+                    <?php if($flagbacto){
+                        ?>
+                        <img src="../media/nounours/beatis.svg" class="versinia cerclevert" />Versinia pustulus
+                        <?php
+                    }else{
+                    ?>
+                    <input type='image' name='bacto' value='Versinia pustulus' class='versinia cerclevert' src="../media/nounours/pustulus.svg"/>
+                    <input type='submit' name='bacto' value='Versinia pustulus' class='nobutton' />
+                    <?php }?>
+                </p>
+
+                <p>
+                    <?php if($flagbacto){
+                        ?>
+                        <img src="../media/nounours/trifors.svg" class="versinia cerclevert" />Versinia beatis
+                        <?php
+                    }else{
+                    ?>
+                    <input type='image' name='bacto' value='Versinia trifors' class='versinia cerclevert' src="../media/nounours/trifors.svg"/>
+                    <input type='submit' name='bacto' value='Versinia trifors' class='nobutton' />
+                    <?php }?>
+                </p>
             </form>
         </div>
     </div>

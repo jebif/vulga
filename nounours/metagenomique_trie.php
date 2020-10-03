@@ -5,8 +5,8 @@ require("headerNounours.php");
 
 <h1>Quelle est la famille de bactéries responsable de la blastouille de Nounours ?</h1>
 
-<div class="row justify-content-left">
-    <div class="col-4">
+<div class="row justify-content-around">
+    <div class="col-md-6 col-lg-4">
         <div class="explication">
             <p>Merci <?php echo $_SESSION['explorerName']; ?> ! Grâce à toi on voit bien les familles !</p>
 
@@ -15,7 +15,7 @@ require("headerNounours.php");
     </div>
 
 
-    <div class="col-8">
+    <div class="col-lg-7 col-md-6">
         <div class="explication">
             <h2>Alors <?php echo $_SESSION['explorerName']; ?> quelle famille de bactéries rend Nounours malade ?</h2>
 

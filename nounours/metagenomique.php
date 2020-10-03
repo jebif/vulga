@@ -9,26 +9,25 @@ require("headerNounours.php");
     <div class="col-9">
         <div class="explication">
             <p>Nounours va voir les experts bioinfo.</p>
-            <blockquote><p>&laquo;bonjour ! je m’appelle Nounours,
-             Mon nounoursologue m’a dit de venir vous voir parce que j’ai une bactérie qui me rend très malade. et les médicaments marchent pas !&raquo;</p></blockquote>
-            <blockquote><p>&laquo;Bonjour Nounours, bienvenue dans notre laboratoire ! Nous allons voir ce que l’on peut faire pour te soigner&raquo;</p></blockquote>
-            <p>Les experts reflechissent puis disent.</p>
-            <blockquote><p>&laquo;Nounours, pour te soigner, il faut impérativement trouver la bactérie qui te rend malade.&raquo;</p></blockquote>
-            <blockquote><p>&laquo;D’accord, comment vous allez faire?&raquo;</p></blockquote>
-            <blockquote><p>&laquo;oh, tu es un curieux nounours, c’est bien ! Pour commencer nous allons observer les différentes bactéries de ton système digestif&raquo;</p></blockquote>
-            <blockquote><p>&laquo;il y en a beaucoup ?&raquo;</p></blockquote>
-            <blockquote><p>&laquo;oui ! des millions !!&raquo;</p></blockquote>
-            <blockquote><p>&laquo;oh mais c’est pas dangereux toutes ces bactéries?&raquo;</p></blockquote>
-            <blockquote><p>&laquo;non Nounours, les bactéries de ton système digestif ne rendent pas toutes malades. Tu as même besoin de certaines de ces bactéries pour vivre ! Toutes ces microbes s’apellent le microbiote intestinal&raquo;</p></blockquote>
-            <blockquote><p>&laquo;Mais alors ! Vous pouvez pas toutes les enlever pour regarder !&raquo;</p></blockquote>
-            <blockquote><p>&laquo;eh non nounours, ça serait trop simple ! On va prendre qu’une petite partie de tes bactéries. ça s’appelle un échantillon !&raquo;</p></blockquote>
-            <blockquote><p>&laquo;un peu comme pour les shampoings?&raquo;</p></blockquote>
-            <blockquote><p>&laquo;oui exactement !&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Bonjour ! Je m’appelle Nounours,
+             Mon nounoursologue m’a dit de venir vous voir parce que j’ai une bactérie qui me rend très malade. Et les médicaments marchent pas&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Bonjour Nounours, bienvenue dans notre laboratoire ! Nous allons voir ce que l’on peut faire pour te soigner&nbsp;&raquo;</p></blockquote>
+            <p>Les experts réfléchissent puis disent&nbsp;:</p>
+            <blockquote><p>&laquo;&nbsp;Nounours, pour te soigner, il faut impérativement trouver la bactérie qui te rend malade.&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;D’accord, comment vous allez faire&nbsp;?&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Oh, tu es un curieux nounours, c’est bien&nbsp;! Pour commencer nous allons observer les différentes bactéries de ton système digestif&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Il y en a beaucoup&nbsp;?&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Oui&nbsp;!&nbsp;Des millions&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Oh&nbsp;! Mais c’est pas dangereux toutes ces bactéries&nbsp;?&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Non Nounours, les bactéries de ton système digestif ne rendent pas toutes malades. Tu as même besoin de certaines de ces bactéries pour vivre&nbsp;! Tous ces microbes s’appellent le microbiote intestinal&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Mais alors&nbsp;! Vous pouvez pas toutes les enlever pour regarder&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Eh non nounours, ça serait trop dangereux&nbsp;! On va prendre qu’une petite partie de tes bactéries. Ça s’appelle un échantillon&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Un peu comme pour les shampoings&nbsp;?&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Oui exactement&nbsp;!&nbsp;&raquo;</p></blockquote>
         </div>
-    </div>
-
-    <div class="col-3">
-        <p><a class="btn btn-outline-primary btn-lg" role="button" href="./metagenomique_echantillon.php">Voir l'échantillon</a></p>
+        <div align="center">
+            <p><a class="btn btn-outline-primary btn-lg" role="button" href="./metagenomique_echantillon.php">Voir l'échantillon</a></p>
+        </div>
     </div>
 </div>
 

@@ -6,22 +6,21 @@ require("headerNounours.php");
 <h1>Quelle est la famille de bactéries responsable de la blastouille de Nounours ?</h1>
 
 <div class="row justify-content-left">
-    <div class="col-4">
+    <div class="col-md-6 col-lg-4">
         <div class="explication">
-            <p>Et oui <?php echo $_SESSION['explorerName']; ?> ! Si on a que cette information, on ne peut pas deviner de quelle famille est la bactérie qui te rend malade Nounours</p>
+            <p>Et oui <?php echo $_SESSION['explorerName']; ?>&nbsp;! Si on n'a que cette information, on ne peut pas deviner de quelle famille est la bactérie qui rend malade Nounours.</p>
             <blockquote>
-            <p>&laquo;Mais alors, comment on peut savoir quelle famille me rend malade ?&raquo;</p></blockquote>
-            <blockquote><p>&laquo;On va regarder ce qu’il se passe chez un ours en peluche en bonne santé ! ça sera notre témoin !&raquo;</p></blockquote>
+            <p>&laquo;&nbsp;Mais alors, comment on peut savoir quelle famille me rend malade&nbsp;?&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;On va regarder ce qu’il se passe chez un ours en peluche en bonne santé&nbsp;! ça sera notre témoin&nbsp;!&nbsp;&raquo;</p></blockquote>
             <blockquote><p>&laquo;Oh ! mon grand-frère Snippy aussi est un ours en peluche ! et lui il a pas mangé la même chose que moi ! il pourrait être notre témoin !&raquo;</p></blockquote>
             <blockquote><p>&laquo;Très bonne idée Nounours, regardons le microbiote de Snippy !&raquo;</p></blockquote>
-
-            <p><img src="../media/nounours/sample_nounours_snippy.svg" width="100%" /></p>
         </div>
     </div>
 
-    <div class="col-8">
-        <h2>Alors, quelle famille rend Nounours malade ?</h2>
+    <div class="col-lg-7 col-md-6">
         <div class="explication">
+            <p><img src="../media/nounours/sample_nounours_snippy.svg" width="100%" /></p>
+
             <h2>Alors <?php echo $_SESSION['explorerName']; ?> quelle famille de bactéries rend Nounours malade ?</h2>
 
             <?php
@@ -29,8 +28,8 @@ require("headerNounours.php");
                 if($_GET['a'] != "versinia"){
                     ?><div class="alert alert-danger" role="alert">As-tu besoin d'aide ? Regarde bien les différences de nombre de bactéries de chaque couleur.</div><?php
                 }else{
-                    ?><div class="alert alert-success" role="alert">Bravo <?php echo $_SESSION['explorerName']; ?>. Il s'agit bien des Versinia. En effet, leur nombre est bien plus important chez Nounours que chez Snippy. Les autres bactéries sont présentes en quantité similaire chez Nounours et Snippy.</div>
-                    <a class="btn btn-outline-primary btn-lg" role="button" href= "./metagenomique_conclusion.php">Continuer</a>
+                    ?><div class="alert alert-success" role="alert">Bravo <?php echo $_SESSION['explorerName']; ?>&nbsp;! Il s'agit bien des Versinia. En effet, leur nombre est bien plus important chez Nounours que chez Snippy. Les autres bactéries sont présentes en quantités similaires chez Nounours et Snippy.</div>
+                    <div align="center"><a class="btn btn-outline-primary btn-lg" role="button" href= "./metagenomique_conclusion.php">Continuer</a></div>
                     <?php
                 }
             }

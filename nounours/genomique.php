@@ -10,10 +10,10 @@ require("genomique_seqs.php");
 <div class="row justify-content-left">
     <div class="col-9">
         <div class="explication">
-            <blockquote><p>&laquo;ouah super ! on peut maintenant me soigner alors! il suffit de m’enlever toutes les Versinia !&raquo;</p></blockquote>
-            <blockquote><p>&laquo;Non Nounours ! Ce n’est pas si simple. Regarde chez Snippy aussi, il y a des Versinia et je suis sure qu’elles l’aident à manger !&raquo;</p></blockquote>
-            <blockquote><p>&laquo;Dans la famille Versinia nous connaissons 4 bactéries : grognus, beatis, pustulus, et trifors.</p>
-                <p>Nous devons découvrir laquelle te rend malade pour pouvoir te soigner !&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Ouah super&nbsp;! On peut maintenant me soigner alors! il suffit de m’enlever toutes les Versinia&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Non Nounours&nbsp;! Ce n’est pas si simple. Regarde chez Snippy aussi, il y a des Versinia et je suis sure qu’elles l’aident à manger&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Dans la famille Versinia nous connaissons quatre bactéries&nbsp;: beatis, grognus, pustulus, et trifors.</p>
+                <p>Nous devons découvrir laquelle te rend malade pour pouvoir te soigner&nbsp;!&nbsp;&raquo;</p></blockquote>
 
             <div class="row">
                 <div class="col">
@@ -33,9 +33,10 @@ require("genomique_seqs.php");
                     <p>Versinia trifors</p>
                 </div>
             </div>
-            <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./genomique_suite.php">Continuer</a></p>
-        </div>
     </div>
+        <div align="center">
+        <p><a class="btn btn-outline-primary btn-lg" role="button" href= "./genomique_suite.php">Continuer</a></p></div>
+</div>
 </div>
 
 <?php

@@ -27,7 +27,7 @@ function display_seq_jeu($seq, $value, $pos_identified, $pos_select){
         $nucl = $seqexploded[$i];
         $nuclvalue = $value+$i;
         if(in_array($nuclvalue,$pos_identified) || ($nuclvalue == $pos_select)){
-            echo "<span class='$nucl'>$nucl</span>";
+            echo "<span class='$nucl fondgris' data-toggle='tooltip' data-placement='top' title='Tu as déjà placé une lecture à cet endroit ! Essaie à un autre endroit.'>$nucl</span>";
         }else{
             echo "<input type='submit' name='pos_".$nuclvalue."' value='".$nucl."' class='".$nucl."'>";
         }
@@ -40,7 +40,7 @@ function display_seq_jeu_id($seq, $value, $pos_identified, $pos_select){
         $nucl = $seqexploded[$i];
         $nuclvalue = $value+$i;
         if(in_array($nuclvalue,$pos_identified)){
-            echo "<span class='$nucl'>$nucl</span>";
+            echo "<span class='$nucl fondgris'>$nucl</span>";
         }else{
             echo "<span class='Z'>&nbsp;</span>";
         }

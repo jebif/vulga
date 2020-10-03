@@ -20,7 +20,7 @@
             demitour: ["1", "4", "5", "6"]
         };
         var regle = regles[regle];
-        
+
         if (! easy) {
             clickOnProtSecondary(elt)
         } else if (regle.indexOf(elt.value) == -1) {
@@ -44,13 +44,13 @@
 
         for (let index = 0; index < buttons.length; index++) {
             const button = buttons[index];
-            
+
             let classname = button.className.split(" ");
             if (classname.indexOf(success) != -1) {
                 count++;
             }
         }
-        
+
         if (nbSuccess[regle] == count) {
             return true;
         } else {
@@ -65,7 +65,7 @@
 
         for (let index = 0; index < items.length; index++) {
             const item = items[index];
-            
+
             if (item.classList.length == length) {
                 return item.value;
             }
@@ -93,7 +93,7 @@
             return false;
         } else if (difference != differenceValue) {
             alertDiv.className = "alert alert-danger";
-            alertDiv.innerHTML = "Il n'y a qu'une protéine qui rend Nounours malade.";
+            alertDiv.innerHTML = "Tu as conservé plusieurs protéines, alors qu'il n'y en a qu'une qui rend Nounours malade.";
             window.location = "#alertDiv";
             return false;
         } else if (unselectedProtein == goodAnswer) {
@@ -106,7 +106,7 @@
             return false;
         } else {
             alertDiv.className = "alert alert-danger";
-            alertDiv.innerHTML = "La protéine restante vérifie au moins une des règles.";
+            alertDiv.innerHTML = "La protéine restante ne respecte pas au moins une des règles.";
             window.location = "#alertDiv";
             return false;
         }
