@@ -8,12 +8,12 @@ require("headerNounours.php");
 <div class="row justify-content-left">
     <div class="col-md-6 col-lg-4">
         <div class="explication">
-            <p>Et oui <?php echo $_SESSION['explorerName']; ?>&nbsp;! Si on n'a que cette information, on ne peut pas deviner de quelle famille est la bactérie qui rend malade Nounours.</p>
+            <p>Et oui <?php echo $_SESSION['explorerName']; ?>&nbsp;! Si on n'a que cette information, <span class="vert">on ne peut pas deviner</span> de quelle famille est la bactérie qui rend malade Nounours.</p>
             <blockquote>
-            <p>&laquo;&nbsp;Mais alors, comment on peut savoir quelle famille me rend malade&nbsp;?&nbsp;&raquo;</p></blockquote>
-            <blockquote><p>&laquo;&nbsp;On va regarder ce qu’il se passe chez un ours en peluche en bonne santé&nbsp;! ça sera notre témoin&nbsp;!&nbsp;&raquo;</p></blockquote>
-            <blockquote><p>&laquo;Oh ! mon grand-frère Snippy aussi est un ours en peluche ! et lui il a pas mangé la même chose que moi ! il pourrait être notre témoin !&raquo;</p></blockquote>
-            <blockquote><p>&laquo;Très bonne idée Nounours, regardons le microbiote de Snippy !&raquo;</p></blockquote>
+            <p>&laquo;&nbsp;Mais alors, <span class="orange">comment on peut savoir</span> quelle famille me rend malade&nbsp;?&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;On va regarder ce qu’il se passe chez un ours en peluche <span class="bleuclair">en bonne santé</span>&nbsp;! ça sera notre <span class="violet">témoin</span>&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Oh ! mon grand-frère Snippy aussi est un ours en peluche ! et lui <span class="vert">il a pas mangé la même chose que moi</span> ! il pourrait être notre témoin &nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Très bonne idée Nounours, <span class="jaune">regardons le microbiote de Snippy</span>&nbsp;!&nbsp;&raquo;</p></blockquote>
         </div>
     </div>
 

@@ -52,7 +52,10 @@ if(array_key_exists('validate', $_POST)){
 <div class="row">
     <div class="col-8">
         <div class="explication">
-            <p>Pour reconstruire le puzzle, sélectionne une des pièces, que l'on appelle une lecture, à droite. Il faut que cette pièce s'aligne parfaitement avec les génomes à gauche. Dès que tu as trouvé où elle allait, clique sur la première lettre de la séquence de gauche qui correspond.</p>
+            <p>Pour reconstruire le puzzle, clique sur une <span class="violet">des suites de lettres</span> à droite. Cela s'appelle un "read". En anglais, ça veut dire "lecture".</p>
+            <p>Elle va devenir grise, ce qui signifie qu'elle a été <span class="vert">correctement sélectionnée</span>. </p>
+            <p>Il faut que cette pièce <span class="rose">s'aligne parfaitement</span> avec les séquences de nos Versinia à gauche.</p>
+            <p>Dès que tu as trouvé où elle allait, <span class="jaune">clique sur la première lettre</span> qui correspond.</p>
 
             <?php
             $seq_select = NULL;

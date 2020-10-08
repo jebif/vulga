@@ -10,10 +10,13 @@ require("genomique_seqs.php");
 <div class="row justify-content-left">
     <div class="col-9">
         <div class="explication">
-            <blockquote><p>&laquo;&nbsp;Ouah super&nbsp;! On peut maintenant me soigner alors! il suffit de m’enlever toutes les Versinia&nbsp;!&nbsp;&raquo;</p></blockquote>
-            <blockquote><p>&laquo;&nbsp;Non Nounours&nbsp;! Ce n’est pas si simple. Regarde chez Snippy aussi, il y a des Versinia et je suis sure qu’elles l’aident à manger&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Ouah super&nbsp;!</p>
+            <p>On peut maintenant <span class="vert">me soigner</span> alors&nbsp;!</p>
+            <p>Il suffit de <span class="violet">m’enlever toutes les Versinia</span>&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <blockquote><p>&laquo;&nbsp;Non Nounours&nbsp;!</p>
+            <p>Ce n’est pas si simple. Regarde chez Snippy aussi, <span class="rose">il y a des Versinia</span> et je suis sure qu’elles l’<span class="jaune">aident à manger</span>&nbsp;!&nbsp;&raquo;</p></blockquote>
             <blockquote><p>&laquo;&nbsp;Dans la famille Versinia nous connaissons quatre bactéries&nbsp;: beatis, grognus, pustulus, et trifors.</p>
-                <p>Nous devons découvrir laquelle te rend malade pour pouvoir te soigner&nbsp;!&nbsp;&raquo;</p></blockquote>
+            <p>Nous devons découvrir <span class="orange">laquelle te rend malade</span> pour pouvoir te soigner&nbsp;!&nbsp;&raquo;</p></blockquote>
 
             <div class="row">
                 <div class="col">

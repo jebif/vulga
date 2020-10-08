@@ -78,7 +78,7 @@ require("headerNounours.php");
         <div class="col-4">
             <div class="explication">
                 <div role="alert" id="alertDiv" style="display:none;"></div>
-                <p>Afin d'identifier la bonne protéine, tu peux naviguer dans les règles à gauche puis cliques sut toutes les protéines ci-dessous qui ne la respectent pour les éliminer. Lorsque tu as éliminé une protéine, elle apparaît sur fond rouge. Ne recliques pas dessus&nbsp;!</p>
+                <p>Afin d'identifier la bonne protéine, tu peux naviguer dans les règles à gauche puis cliquer sur toutes les protéines ci-dessous qui ne la respectent pas pour les éliminer. Lorsque tu as éliminé une protéine, elle apparaît sur fond rouge. Ne recliques pas dessus&nbsp;!</p>
                 <p>Une fois que tu as éliminé toutes les protéines qui ne respectent pas l'ensemble des règles, cliques sur le bouton Vérifier en bas de la page.</p>
             </div>
         </div>

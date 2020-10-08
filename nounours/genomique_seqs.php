@@ -80,7 +80,7 @@ function display_seq_reads($seq_identified, $seq_select){
 function test_alignement($seq, $pos){
     if(($seq == 0 || $seq == 2) && ($pos == 308 || $pos == 213)){
         return 1;
-    }else if(($seq == 1 || $seq == 3 || $seq == 5) && ($pos == 108 || $pos == 316 || $pos = 400)){
+    }else if(($seq == 1 || $seq == 3 || $seq == 5) && ($pos == 108 || $pos == 316 || $pos == 400)){
         return 1;
     }else if($seq == 4 && $pos == 300){
         return 1;

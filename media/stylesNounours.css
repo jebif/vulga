@@ -350,6 +350,10 @@ audio{
 	color:#000;
 }
 
+.explication blockquote{
+	margin-top: 10px;
+}
+
 .explication .bleuclair{
 	background-color:#9FC5E8;
 }
