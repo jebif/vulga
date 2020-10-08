@@ -14,18 +14,21 @@ require("headerNounours.php");
 
     <div class="col-3 justify-content-center">
         <div class="photoNounours whitebg">
-            <img src="../media/nounours/photo_nounours.png" width="100%"/>
+            <img src="../media/nounours/nounours2" width="100%"/>
             <p class="legende">Nounours</p>
             <p class="legendeTexte">Notre super mascotte !</p>
         </div>
     </div>
 </div>
 
+<p>Nos super relecteurs :<br />
+Slim, Athénaïs, Victor, Mathias, Emma, Marylène</p>
+
 <p>La version en ligne a été conçu par :</p>
 <div class="row justify-content-around">s
     <div class="col justify-content-center">
         <div class="photoNounours whitebg">
-            <img src="../media/nounours/photo_nounours.png" width="100%"/>
+            <img src="../media/nounours/flo.jpg" width="100%"/>
             <p class="legende">Florence</p>
             <ul class="legendeTexte">
                 <li>Voix</li>
@@ -48,7 +51,7 @@ require("headerNounours.php");
     </div>
     <div class="col justify-content-center">
         <div class="photoNounours  whitebg">
-            <img src="../media/nounours/photo_nounours.png" width="100%"/>
+            <img src="../media/nounours/xavier" width="100%"/>
             <p class="legende">Xavier</p>
             <ul class="legendeTexte">
                 <li>Web</li>
@@ -57,7 +60,7 @@ require("headerNounours.php");
     </div>
     <div class="col justify-content-center">
         <div class="photoNounours  whitebg">
-            <img src="../media/nounours/photo_nounours.png" width="100%"/>
+            <img src="../media/nounours/julie" width="100%"/>
             <p class="legende">Julie</p>
             <ul class="legendeTexte">
                 <li>Image</li>
@@ -67,7 +70,7 @@ require("headerNounours.php");
     </div>
     <div class="col justify-content-center">
         <div class="photoNounours whitebg">
-            <img src="../media/nounours/photo_nounours.png" width="100%"/>
+            <img src="../media/nounours/amaury.jpeg" width="100%"/>
             <p class="legende">Amaury</p>
             <ul class="legendeTexte">
                 <li>Voix </li>
