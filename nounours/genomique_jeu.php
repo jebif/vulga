@@ -17,9 +17,17 @@ if(array_key_exists('validate', $_POST)){
         $seq_identified=str_split($_POST['seqid'],1);
     }
 
-    //print_r($seq_identified);
+    if(array_key_exists('bacto_beatis', $_POST)){
+        $bacto_selected = "beatis" ;
+    }else if(array_key_exists('bacto_grognus', $_POST)){
+        $bacto_selected = "grognus" ;
+    }else if(array_key_exists('bacto_pustulus', $_POST)){
+        $bacto_selected = "pustulus" ;
+    }else if(array_key_exists('bacto_trifors', $_POST)){
+        $bacto_selected = "trifors" ;
+    }
 
-    if(! array_key_exists('read', $_POST) && ! array_key_exists('bacto', $_POST)){
+    if(! array_key_exists('read', $_POST) && ! isset($bacto_selected)){
         echo "Il faut choisir un read !";
     }else if(array_key_exists('read', $_POST)){
         $read = $_POST['read'];
@@ -111,8 +119,8 @@ if(array_key_exists('validate', $_POST)){
 
                 <?php
                     $flagbacto = 0;
-                    if(isset($_POST['bacto'])){
-                        if($_POST['bacto'] != "Versinia pustulus"){
+                    if(isset($bacto_selected)){
+                        if($bacto_selected != "pustulus"){
                         ?>
                             <div class="alert alert-danger" role="alert">As-tu besoin d'aide&nbsp;? Regarde bien l'alignement&nbsp;!</div>
                         <?php
@@ -133,8 +141,8 @@ if(array_key_exists('validate', $_POST)){
                         <?php
                     }else{
                     ?>
-                    <input type='image' name='bacto' value='Versinia beatis' class='versinia cerclevert' src="../media/nounours/beatis.svg" />
-                    <input type='submit' name='bacto' value='Versinia beatis' class='nobutton' />
+                    <input type='image' name='bacto_beatis' value='Versinia beatis' class='versinia cerclevert' src="../media/nounours/beatis.svg" />
+                    <input type='submit' name='bacto_beatis' value='Versinia beatis' class='nobutton' />
                     <?php }
                     ?>
                 </p>
@@ -146,8 +154,8 @@ if(array_key_exists('validate', $_POST)){
                         <?php
                     }else{
                     ?>
-                    <input type='image' name='bacto' value='Versinia grognus' class='versinia cerclevert' src="../media/nounours/grognus.svg" />
-                    <input type='submit' name='bacto' value='Versinia grognus' class='nobutton' />
+                    <input type='image' name='bacto_grognus' value='Versinia grognus' class='versinia cerclevert' src="../media/nounours/grognus.svg" />
+                    <input type='submit' name='bacto_grognus' value='Versinia grognus' class='nobutton' />
                     <?php }
                     ?>
                 </p>
@@ -159,8 +167,8 @@ if(array_key_exists('validate', $_POST)){
                         <?php
                     }else{
                     ?>
-                    <input type='image' name='bacto' value='Versinia pustulus' class='versinia cerclevert' src="../media/nounours/pustulus.svg"/>
-                    <input type='submit' name='bacto' value='Versinia pustulus' class='nobutton' />
+                    <input type='image' name='bacto_pustulus' value='Versinia pustulus' class='versinia cerclevert' src="../media/nounours/pustulus.svg"/>
+                    <input type='submit' name='bacto_pustulus' value='Versinia pustulus' class='nobutton' />
                     <?php }?>
                 </p>
 
@@ -171,8 +179,8 @@ if(array_key_exists('validate', $_POST)){
                         <?php
                     }else{
                     ?>
-                    <input type='image' name='bacto' value='Versinia trifors' class='versinia cerclevert' src="../media/nounours/trifors.svg"/>
-                    <input type='submit' name='bacto' value='Versinia trifors' class='nobutton' />
+                    <input type='image' name='bacto_trifors' value='Versinia trifors' class='versinia cerclevert' src="../media/nounours/trifors.svg"/>
+                    <input type='submit' name='bacto_trifors' value='Versinia trifors' class='nobutton' />
                     <?php }?>
                 </p>
             </form>
