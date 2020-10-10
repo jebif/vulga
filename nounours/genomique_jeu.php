@@ -17,15 +17,19 @@ if(array_key_exists('validate', $_POST)){
         $seq_identified=str_split($_POST['seqid'],1);
     }
 
-    if(array_key_exists('bacto_beatis', $_POST)){
+    //print_r($_POST);
+
+    if(array_key_exists('bacto_beatis_x', $_POST)){
         $bacto_selected = "beatis" ;
-    }else if(array_key_exists('bacto_grognus', $_POST)){
+    }else if(array_key_exists('bacto_grognus_x', $_POST)){
         $bacto_selected = "grognus" ;
-    }else if(array_key_exists('bacto_pustulus', $_POST)){
+    }else if(array_key_exists('bacto_pustulus_x', $_POST)){
         $bacto_selected = "pustulus" ;
-    }else if(array_key_exists('bacto_trifors', $_POST)){
+    }else if(array_key_exists('bacto_trifors_x', $_POST)){
         $bacto_selected = "trifors" ;
     }
+
+    //echo($bacto_selected);
 
     if(! array_key_exists('read', $_POST) && ! isset($bacto_selected)){
         echo "Il faut choisir un read !";
